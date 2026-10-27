@@ -1,0 +1,679 @@
+/* =========================================================
+   THE LUXURY PERFUMES
+   EXACT CSS FOR THE PROVIDED HTML
+   ========================================================= */
+
+
+/* =========================
+   GLOBAL RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Remove the default spacing created by the HTML elements */
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+/* First table = header */
+
+body > table:first-of-type {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+}
+
+
+/* Header's main content cell */
+
+body > table:first-of-type td {
+    padding: 10px;
+}
+
+
+/* Website title */
+
+body > table:first-of-type h1 {
+    margin: 8px 0 12px 0;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 40px !important;
+    font-weight: bold;
+    letter-spacing: 12px;
+    line-height: 1.2;
+    color: #050505;
+}
+
+
+/* Header subtitle */
+
+body > table:first-of-type h1 + p {
+    margin: 0 0 18px 0;
+}
+
+body > table:first-of-type h1 + p font {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 10px !important;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #777777;
+}
+
+
+/* Logo */
+
+body > table:first-of-type img {
+    display: block;
+    width: 102px;
+    height: 78px;
+    object-fit: contain;
+    margin: 20px auto 17px auto;
+}
+
+
+/* Header horizontal lines */
+
+body > table:first-of-type hr {
+    width: 85% !important;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #dddddd;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+body > table:first-of-type td > p:nth-of-type(2) {
+    margin: 17px auto 17px auto;
+    white-space: nowrap;
+}
+
+
+/* All navigation links */
+
+body > table:first-of-type td > p:nth-of-type(2) a {
+    display: inline-block;
+    position: relative;
+
+    padding: 9px 14px;
+
+    color: #080808;
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    transition: 0.2s ease;
+}
+
+
+/* Navigation separators */
+
+body > table:first-of-type td > p:nth-of-type(2) a:not(:last-child)::after {
+    content: "|";
+
+    position: absolute;
+    right: -11px;
+    top: 8px;
+
+    color: #b89c48;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* Navigation hover */
+
+body > table:first-of-type td > p:nth-of-type(2) a:hover {
+    color: #b49745;
+}
+
+
+/* HOME active button */
+
+body > table:first-of-type td > p:nth-of-type(2) a:first-child {
+    padding: 10px 17px;
+    background: #111111;
+    color: #ffffff;
+}
+
+
+/* Gold line underneath HOME */
+
+body > table:first-of-type td > p:nth-of-type(2) a:first-child::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+    background: #b49745;
+}
+
+
+/* =========================================================
+   SPACE BETWEEN NAV AND HERO
+   ========================================================= */
+
+body > table:first-of-type + br {
+    display: block;
+    height: 20px;
+    content: "";
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+/* Second table = Hero */
+
+body > table:nth-of-type(2) {
+    width: 51% !important;
+    max-width: 900px;
+    min-width: 700px;
+
+    margin: 68px auto 0 auto !important;
+
+    border: 1px solid #dedede !important;
+
+    background: #ffffff;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Hero outer cell */
+
+body > table:nth-of-type(2) > tbody > tr > td {
+    padding: 49px 24px !important;
+    border: 0 !important;
+}
+
+
+/* Hero inner border */
+
+body > table:nth-of-type(2) > tbody > tr > td::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+}
+
+
+/* Hero heading */
+
+body > table:nth-of-type(2) h2 {
+    margin: 0 auto 23px auto;
+
+    max-width: 700px;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 36px !important;
+    font-weight: normal;
+
+    line-height: 1.5;
+    letter-spacing: 6px;
+
+    color: #050505;
+}
+
+
+/* Hero paragraph */
+
+body > table:nth-of-type(2) p {
+    max-width: 670px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+
+    line-height: 1.8;
+
+    color: #555555;
+}
+
+
+/* Hero paragraph's old <font> */
+
+body > table:nth-of-type(2) p font {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    color: #555555;
+}
+
+
+/* Hero button paragraph */
+
+body > table:nth-of-type(2) p:nth-of-type(2) {
+    margin-top: 42px;
+}
+
+
+/* Hero button */
+
+body > table:nth-of-type(2) p:nth-of-type(2) a {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background: #111111;
+    color: #ffffff;
+
+    border: 1px solid #111111;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Hero button hover */
+
+body > table:nth-of-type(2) p:nth-of-type(2) a:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================================================
+   FEATURED HOUSES
+   ========================================================= */
+
+/* Third table = Featured section */
+
+body > table:nth-of-type(3) {
+    width: 55% !important;
+    max-width: 930px;
+
+    margin: 126px auto 0 auto !important;
+
+    border: 0 !important;
+}
+
+
+/* FEATURED HOUSES heading */
+
+body > table:nth-of-type(3) h3 {
+    margin: 0 0 18px 0;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 28px !important;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #111111;
+}
+
+
+/* Gold underline */
+
+body > table:nth-of-type(3) tr:first-child hr {
+    width: 64px !important;
+
+    height: 1px;
+
+    border: 0;
+    border-top: 1px solid #c5a646;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   BRAND COLUMNS
+   ========================================================= */
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td {
+    padding: 0 8px;
+    vertical-align: top;
+}
+
+
+/* Each brand's inner table */
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table {
+    width: 95% !important;
+
+    margin: 0 auto;
+
+    min-height: 250px;
+
+    border: 1px solid #dedede !important;
+
+    background: #ffffff;
+}
+
+
+/* Brand inner cell */
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table td {
+    padding: 33px 21px !important;
+
+    border: 0 !important;
+}
+
+
+/* =========================================================
+   BRAND CARD INNER BORDER
+   ========================================================= */
+
+/*
+   The original HTML only has one border around each card.
+   This creates the thin inner border seen in your screenshot.
+*/
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table td::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+}
+
+
+/* =========================================================
+   BRAND NAMES
+   ========================================================= */
+
+body > table:nth-of-type(3) h4 {
+    margin: 0 0 14px 0;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 17px !important;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #111111;
+}
+
+
+/* =========================================================
+   PERFUME NAME
+   ========================================================= */
+
+body > table:nth-of-type(3) h4 + p {
+    margin: 0 0 21px 0;
+}
+
+
+body > table:nth-of-type(3) h4 + p font {
+    font-family: "Times New Roman", Georgia, serif !important;
+    font-size: 12px !important;
+
+    font-style: italic;
+
+    color: #666666;
+}
+
+
+/* =========================================================
+   BRAND DESCRIPTION
+   ========================================================= */
+
+body > table:nth-of-type(3) h4 + p + p {
+    max-width: 230px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+
+    line-height: 1.75;
+
+    color: #444444;
+}
+
+
+body > table:nth-of-type(3) h4 + p + p font {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+
+    line-height: 1.75;
+
+    color: #444444;
+}
+
+
+/* =========================================================
+   EXPLORE LINKS
+   ========================================================= */
+
+body > table:nth-of-type(3) h4 + p + p + p {
+    margin: 20px 0 0 0;
+}
+
+
+body > table:nth-of-type(3) h4 + p + p + p a {
+    color: #111111;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.3px;
+
+    text-transform: uppercase;
+
+    transition: color 0.2s ease;
+}
+
+
+body > table:nth-of-type(3) h4 + p + p + p a:hover {
+    color: #b49745;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+/* The HR immediately before the footer */
+
+body > hr {
+    width: 85% !important;
+
+    margin-top: 65px;
+
+    border: 0;
+    border-top: 1px solid #dddddd;
+}
+
+
+/* Footer */
+
+body > table:last-of-type {
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+
+/* Footer text */
+
+body > table:last-of-type p {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 10px !important;
+
+    letter-spacing: 1px;
+
+    color: #777777;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+    body > table:first-of-type h1 {
+        font-size: 34px !important;
+        letter-spacing: 9px;
+    }
+
+    body > table:nth-of-type(2) {
+        width: 70% !important;
+    }
+
+    body > table:nth-of-type(3) {
+        width: 75% !important;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* Header */
+
+    body > table:first-of-type h1 {
+        font-size: 26px !important;
+        letter-spacing: 6px;
+    }
+
+    body > table:first-of-type img {
+        width: 90px;
+        height: 70px;
+    }
+
+
+    /* Navigation */
+
+    body > table:first-of-type td > p:nth-of-type(2) {
+        white-space: normal;
+    }
+
+    body > table:first-of-type td > p:nth-of-type(2) a {
+        margin: 3px 2px;
+        padding: 7px 8px;
+        font-size: 9px !important;
+    }
+
+    body > table:first-of-type td > p:nth-of-type(2) a:not(:last-child)::after {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    body > table:nth-of-type(2) {
+        width: 88% !important;
+        min-width: 0;
+
+        margin-top: 45px !important;
+    }
+
+    body > table:nth-of-type(2) h2 {
+        font-size: 28px !important;
+        letter-spacing: 4px;
+    }
+
+
+    /* Featured */
+
+    body > table:nth-of-type(3) {
+        width: 90% !important;
+        margin-top: 80px !important;
+    }
+
+    body > table:nth-of-type(3) > tbody > tr:nth-child(2) {
+        display: block;
+    }
+
+    body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td {
+        display: block;
+        width: 100% !important;
+
+        padding: 10px !important;
+    }
+
+    body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table {
+        width: 100% !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    body > table:first-of-type h1 {
+        font-size: 19px !important;
+        letter-spacing: 4px;
+    }
+
+    body > table:first-of-type h1 + p font {
+        font-size: 8px !important;
+        letter-spacing: 2px;
+    }
+
+    body > table:nth-of-type(2) {
+        width: 94% !important;
+    }
+
+    body > table:nth-of-type(2) > tbody > tr > td {
+        padding: 30px 15px !important;
+    }
+
+    body > table:nth-of-type(2) h2 {
+        font-size: 22px !important;
+        letter-spacing: 3px;
+    }
+
+    body > table:nth-of-type(2) p font {
+        font-size: 12px !important;
+    }
+
+    body > table:nth-of-type(3) h3 {
+        font-size: 21px !important;
+        letter-spacing: 3px;
+    }
+}

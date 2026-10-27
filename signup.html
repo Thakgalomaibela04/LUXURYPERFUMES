@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Sign Up | The Luxury Perfumes</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body bgcolor="white" text="black">
 
@@ -11,8 +11,8 @@
     <table width="100%" cellpadding="10" cellspacing="0" border="0">
         <tr align="center">
             <td>
-                <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
-                <IMG SRC="_image/LOGO.jpg" alt="The Luxury Perfumes Logo">
+                <h1><font face="Times New Roman" size="7"><b>T H E &nbsp; L U X U R Y &nbsp; P E R F U M E S</b></font></h1>
+                <img src="_image/LOGO.jpg" alt="Logo">
                 <hr width="85%" size="1" color="black" />
                 <p>
                     <font face="Times New Roman" size="3">
@@ -23,7 +23,6 @@
                         <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
                         <a href="signup.html"><b>SIGN UP</b></a> &nbsp;|&nbsp;
                         <a href="login.html">LOGIN</a>
-                        <a href="sitemap.html">SITEMAP</a>
                     </font>
                 </p>
                 <hr width="85%" size="1" color="black" />
@@ -31,59 +30,47 @@
         </tr>
     </table>
 
-    <br />
+    <br /><br />
 
-    <!-- SIGN-UP FORM -->
-    <table width="50%" align="center" cellpadding="15" cellspacing="0" border="1">
-        <tr>
-            <td>
-                <h2 align="center"><font face="Times New Roman" size="6">JOIN THE VIP CLUB</font></h2>
-                <p align="center"><font face="Times New Roman" size="3">Register to receive private invitations and early access to limited editions.</font></p>
-                <hr width="80%" size="1" color="black" />
-                <br />
-
-                <!-- ADDED signupForm ID -->
-                <form id="signupForm">
-                    <table width="100%" cellpadding="8" cellspacing="0" border="0">
-                        <tr>
-                            <td><b>First Name:</b></td>
-                            <td><input type="text" id="firstname" name="firstname" size="30" required /></td>
-                        </tr>
-                        <tr>
-                            <td><b>Last Name:</b></td>
-                            <td><input type="text" id="lastname" name="lastname" size="30" required /></td>
-                        </tr>
-                        <tr>
-                            <td><b>Email Address:</b></td>
-                            <td><input type="email" id="email" name="email" size="30" required /></td>
-                        </tr>
-                        <tr>
-                            <td><b>Create Password:</b></td>
-                            <td><input type="password" id="password" name="password" size="30" minlength="8" required /></td>
-                        </tr>
-                        <tr>
-                            <td><b>Favorite Perfume:</b></td>
-                            <td>
-                                <select id="favorite_brand" name="favorite_brand" required>
-                                    <option value="chanel">Chanel</option>
-                                    <option value="dior">Dior</option>
-                                    <option value="valentino">Valentino</option>
-                                    <option value="versace">Versace</option>
-                                    <option value="dg">Dolce & Gabbana</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr align="center">
-                            <td colspan="2">
-                                <br />
-                                <input type="submit" value="REGISTER ACCOUNT" />
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </td>
-        </tr>
-    </table>
+    <!-- SIGN UP FORM (CENTERED TABLE) -->
+    <form id="signupForm">
+        <table align="center" cellpadding="8" cellspacing="0" border="0">
+            <tr>
+                <td align="right"><b>First Name:</b></td>
+                <td align="left"><input type="text" id="firstname" name="firstname" size="30" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Last Name:</b></td>
+                <td align="left"><input type="text" id="lastname" name="lastname" size="30" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Email Address:</b></td>
+                <td align="left"><input type="email" id="email" name="email" size="30" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Create Password:</b></td>
+                <td align="left"><input type="password" id="password" name="password" size="30" minlength="8" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Favorite Perfume:</b></td>
+                <td align="left">
+                    <select id="favorite_brand" name="favorite_brand" required>
+                        <option value="chanel">Chanel</option>
+                        <option value="dior">Dior</option>
+                        <option value="valentino">Valentino</option>
+                        <option value="versace">Versace</option>
+                        <option value="dg">Dolce & Gabbana</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <br />
+                    <input type="submit" value="REGISTER ACCOUNT" />
+                </td>
+            </tr>
+        </table>
+    </form>
 
     <br /><br /><hr width="85%" size="1" color="black" />
 
@@ -95,7 +82,7 @@
     </table>
 
     <script src="js_assets/forms.js"></script>
-<script src="js_assets/main.js"></script>
+    <script src="js_assets/main.js"></script>
 
 </body>
 </html>
