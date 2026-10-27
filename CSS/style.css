@@ -1,0 +1,1639 @@
+/* =========================================================
+   THE LUXURY PERFUMES
+   ORIGINAL CSS + LUXURY PRODUCT PAGE DESIGN
+   ========================================================= */
+
+
+/* =========================
+   GLOBAL RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   ORIGINAL HOMEPAGE HEADER
+   ========================================================= */
+
+body > table:first-of-type {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 0;
+}
+
+body > table:first-of-type td {
+    padding: 10px;
+}
+
+body > table:first-of-type h1 {
+    margin: 8px 0 12px;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 40px !important;
+    font-weight: bold;
+    letter-spacing: 12px;
+    line-height: 1.2;
+    color: #050505;
+}
+
+body > table:first-of-type h1 + p {
+    margin: 0 0 18px;
+}
+
+body > table:first-of-type h1 + p font {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 10px !important;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #777777;
+}
+
+body > table:first-of-type img {
+    display: block;
+    width: 102px;
+    height: 78px;
+    object-fit: contain;
+    margin: 20px auto 17px;
+}
+
+body > table:first-of-type hr {
+    width: 85% !important;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #dddddd;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ORIGINAL NAVIGATION
+   ========================================================= */
+
+body > table:first-of-type td > p:nth-of-type(2) {
+    margin: 17px auto;
+    white-space: nowrap;
+}
+
+body > table:first-of-type td > p:nth-of-type(2) a {
+    display: inline-block;
+    position: relative;
+    padding: 9px 14px;
+    color: #080808;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+body > table:first-of-type td > p:nth-of-type(2) a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -11px;
+    top: 8px;
+    color: #b89c48;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+body > table:first-of-type td > p:nth-of-type(2) a:hover {
+    color: #b49745;
+}
+
+body > table:first-of-type td > p:nth-of-type(2) a:first-child {
+    padding: 10px 17px;
+    background: #111111;
+    color: #ffffff;
+}
+
+body > table:first-of-type td > p:nth-of-type(2) a:first-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #b49745;
+}
+
+body > table:first-of-type + br {
+    display: block;
+    height: 20px;
+    content: "";
+}
+
+
+/* =========================================================
+   ORIGINAL HOMEPAGE HERO
+   ========================================================= */
+
+body > table:nth-of-type(2) {
+    width: 51% !important;
+    max-width: 900px;
+    min-width: 700px;
+    margin: 68px auto 0 !important;
+    border: 1px solid #dedede !important;
+    background: #ffffff;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.07);
+}
+
+body > table:nth-of-type(2) > tbody > tr > td {
+    padding: 49px 24px !important;
+    border: 0 !important;
+}
+
+body > table:nth-of-type(2) > tbody > tr > td::before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+body > table:nth-of-type(2) h2 {
+    margin: 0 auto 23px;
+    max-width: 700px;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 36px !important;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 6px;
+    color: #050505;
+}
+
+body > table:nth-of-type(2) p {
+    max-width: 670px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.8;
+    color: #555555;
+}
+
+body > table:nth-of-type(2) p font {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    color: #555555;
+}
+
+body > table:nth-of-type(2) p:nth-of-type(2) {
+    margin-top: 42px;
+}
+
+body > table:nth-of-type(2) p:nth-of-type(2) a {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #111111;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+
+body > table:nth-of-type(2) p:nth-of-type(2) a:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================================================
+   ORIGINAL FEATURED HOUSES
+   ========================================================= */
+
+body > table:nth-of-type(3) {
+    width: 55% !important;
+    max-width: 930px;
+    margin: 126px auto 0 !important;
+    border: 0 !important;
+}
+
+body > table:nth-of-type(3) h3 {
+    margin: 0 0 18px;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 28px !important;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+body > table:nth-of-type(3) tr:first-child hr {
+    width: 64px !important;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c5a646;
+    margin: 0 auto;
+}
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td {
+    padding: 0 8px;
+    vertical-align: top;
+}
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table {
+    width: 95% !important;
+    margin: 0 auto;
+    min-height: 250px;
+    border: 1px solid #dedede !important;
+    background: #ffffff;
+}
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table td {
+    padding: 33px 21px !important;
+    border: 0 !important;
+}
+
+body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table td::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+body > table:nth-of-type(3) h4 {
+    margin: 0 0 14px;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 17px !important;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+body > table:nth-of-type(3) h4 + p {
+    margin: 0 0 21px;
+}
+
+body > table:nth-of-type(3) h4 + p font {
+    font-family: "Times New Roman", Georgia, serif !important;
+    font-size: 12px !important;
+    font-style: italic;
+    color: #666666;
+}
+
+body > table:nth-of-type(3) h4 + p + p {
+    max-width: 230px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1.75;
+    color: #444444;
+}
+
+body > table:nth-of-type(3) h4 + p + p font {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1.75;
+    color: #444444;
+}
+
+body > table:nth-of-type(3) h4 + p + p + p {
+    margin: 20px 0 0;
+}
+
+body > table:nth-of-type(3) h4 + p + p + p a {
+    color: #111111;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+body > table:nth-of-type(3) h4 + p + p + p a:hover {
+    color: #b49745;
+}
+
+
+/* =========================================================
+   ORIGINAL FOOTER
+   ========================================================= */
+
+body > hr {
+    width: 85% !important;
+    margin-top: 65px;
+    border: 0;
+    border-top: 1px solid #dddddd;
+}
+
+body > table:last-of-type {
+    width: 100%;
+    margin-top: 5px;
+}
+
+body > table:last-of-type p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 10px !important;
+    letter-spacing: 1px;
+    color: #777777;
+}
+
+
+/* =========================================================
+   ORIGINAL RESPONSIVE DESIGN
+   ========================================================= */
+
+@media screen and (max-width: 1100px) {
+    body > table:first-of-type h1 {
+        font-size: 34px !important;
+        letter-spacing: 9px;
+    }
+
+    body > table:nth-of-type(2) {
+        width: 70% !important;
+    }
+
+    body > table:nth-of-type(3) {
+        width: 75% !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body > table:first-of-type h1 {
+        font-size: 26px !important;
+        letter-spacing: 6px;
+    }
+
+    body > table:first-of-type img {
+        width: 90px;
+        height: 70px;
+    }
+
+    body > table:first-of-type td > p:nth-of-type(2) {
+        white-space: normal;
+    }
+
+    body > table:first-of-type td > p:nth-of-type(2) a {
+        margin: 3px 2px;
+        padding: 7px 8px;
+        font-size: 9px !important;
+    }
+
+    body > table:first-of-type td > p:nth-of-type(2) a:not(:last-child)::after {
+        display: none;
+    }
+
+    body > table:nth-of-type(2) {
+        width: 88% !important;
+        min-width: 0;
+        margin-top: 45px !important;
+    }
+
+    body > table:nth-of-type(2) h2 {
+        font-size: 28px !important;
+        letter-spacing: 4px;
+    }
+
+    body > table:nth-of-type(3) {
+        width: 90% !important;
+        margin-top: 80px !important;
+    }
+
+    body > table:nth-of-type(3) > tbody > tr:nth-child(2) {
+        display: block;
+    }
+
+    body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td {
+        display: block;
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    body > table:nth-of-type(3) > tbody > tr:nth-child(2) > td > table {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body > table:first-of-type h1 {
+        font-size: 19px !important;
+        letter-spacing: 4px;
+    }
+
+    body > table:first-of-type h1 + p font {
+        font-size: 8px !important;
+        letter-spacing: 2px;
+    }
+
+    body > table:nth-of-type(2) {
+        width: 94% !important;
+    }
+
+    body > table:nth-of-type(2) > tbody > tr > td {
+        padding: 30px 15px !important;
+    }
+
+    body > table:nth-of-type(2) h2 {
+        font-size: 22px !important;
+        letter-spacing: 3px;
+    }
+
+    body > table:nth-of-type(2) p font {
+        font-size: 12px !important;
+    }
+
+    body > table:nth-of-type(3) h3 {
+        font-size: 21px !important;
+        letter-spacing: 3px;
+    }
+} /* FIXED: closes mobile media query */
+
+
+/* =========================================================
+   GOLD THEME PALETTE
+   ========================================================= */
+
+:root {
+    --gold: #c5a059;
+    --dark-gold: #8a704c;
+    --dark-bg: #111111;
+    --light-bg: #f9f8f6;
+    --error-color: #d9534f;
+}
+
+
+/* =========================================================
+   ACCORDION
+   ========================================================= */
+
+.accordion-header {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid var(--gold);
+    transition: background 0.3s ease;
+}
+
+.accordion-header.active {
+    background: var(--gold);
+    color: #000000;
+}
+/* The Luxury Active/Clicked Button Style */
+.active-luxury-btn, 
+a:active, 
+a:focus {
+    background-color: #111 !important;
+    color: #ffffff !important;
+    padding: 6px 12px;
+    border-bottom: 2px solid #c5a059 !important; /* Luxury gold line */
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #222222;
+    color: #cccccc;
+    padding: 0 20px;
+}
+/* Navigation link styling */
+nav a, .nav-link, td p a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+/* Hover state */
+nav a:hover, .nav-link:hover {
+    background-color: #111;
+    color: #fff;
+}
+/* The Exact Luxury Active Box Style */
+.active-page {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+    padding: 8px 14px !important;
+    border-bottom: 3px solid #c5a059 !important; /* The gold line at the bottom */
+    display: inline-block !important;
+}
+
+/* Active / Clicked state (Matches the Home button style) */
+nav a:active, 
+nav a:focus,
+.active-nav {
+    background-color: #111 !important;
+    color: #fff !important;
+    border-bottom: 2px solid #c5a059; /* Luxury gold bottom border */
+}
+
+
+/* =========================================================
+   LIGHTBOX
+   ========================================================= */
+
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid var(--gold);
+}
+
+
+/* =========================================================
+   FORM VALIDATION
+   ========================================================= */
+
+.input-error {
+    border: 1px solid var(--error-color) !important;
+}
+
+.error-msg {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 4px;
+}
+
+.response-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--gold);
+    background: var(--light-bg);
+    color: #333333;
+    animation: lpFadeIn 0.5s ease;
+}
+
+@keyframes lpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   LUXURY PERFUME PRODUCTS PAGE
+   Only affects elements with the lp- class names
+   ========================================================= */
+
+.lp-products-page {
+    --lp-black: #100d0d;
+    --lp-burgundy: #35151e;
+    --lp-gold: #c7a66a;
+    --lp-champagne: #ead8b3;
+    --lp-cream: #f4eee5;
+    --lp-muted: #b7a899;
+
+    margin: 0;
+    background: var(--lp-black) !important;
+    color: var(--lp-cream) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.lp-products-page * {
+    box-sizing: border-box;
+}
+
+.lp-products-page img {
+    max-width: 100%;
+}
+
+.lp-products-page a {
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+
+/* =========================================================
+   LUXURY HEADER
+   ========================================================= */
+
+.lp-products-page .lp-header {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 24px 7%;
+    background: #0b0909;
+    border-bottom: 1px solid rgba(199, 166, 106, 0.45);
+}
+
+.lp-products-page .lp-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+.lp-products-page .lp-logo {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.lp-products-page .lp-brand h1 {
+    margin: 0;
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 1.25;
+}
+
+.lp-products-page .lp-brand p {
+    margin: 5px 0 0;
+    color: var(--lp-muted);
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.lp-products-page .lp-navigation a {
+    padding: 8px 0;
+    color: var(--lp-cream);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-navigation a:hover,
+.lp-products-page .lp-navigation a.lp-active {
+    color: var(--lp-gold);
+}
+
+.lp-products-page #lp-cart-count {
+    display: inline-flex;
+    min-width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    padding: 0 6px;
+    border-radius: 50px;
+    background: var(--lp-gold);
+    color: #100d0d;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   LUXURY HERO
+   ========================================================= */
+
+.lp-products-page .lp-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 95px 7% 90px;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(117, 54, 65, 0.48), transparent 60%),
+        linear-gradient(135deg, #1b1012 0%, #100d0d 55%, #241116 100%);
+    border-bottom: 1px solid rgba(199, 166, 106, 0.2);
+}
+
+.lp-products-page .lp-hero::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border: 1px solid rgba(199, 166, 106, 0.24);
+    pointer-events: none;
+}
+
+.lp-products-page .lp-hero > * {
+    position: relative;
+}
+
+.lp-products-page .lp-hero .lp-eyebrow {
+    margin-bottom: 20px;
+    color: var(--lp-gold);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-hero h2 {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: clamp(38px, 5vw, 70px);
+    font-weight: normal;
+    line-height: 1.12;
+    letter-spacing: 2px;
+}
+
+.lp-products-page .lp-hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #c5b7aa;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.lp-products-page .lp-hero .lp-hero-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    border: 1px solid var(--lp-gold);
+    background: var(--lp-gold);
+    color: #140f0f;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-hero .lp-hero-link:hover {
+    background: transparent;
+    color: var(--lp-champagne);
+}
+
+
+/* =========================================================
+   COLLECTION INTRODUCTION
+   ========================================================= */
+
+.lp-products-page .lp-collection {
+    padding: 70px 7% 85px;
+    background: var(--lp-black);
+}
+
+.lp-products-page .lp-section-heading {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.lp-products-page .lp-section-heading .lp-eyebrow {
+    margin-bottom: 10px;
+    color: var(--lp-gold);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-section-heading h2 {
+    margin: 0 0 15px;
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+.lp-products-page .lp-section-heading p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--lp-muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SEARCH AND CATEGORY FILTERS
+   ========================================================= */
+
+.lp-products-page .lp-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 35px;
+    padding: 20px 0;
+    border-top: 1px solid #39282a;
+    border-bottom: 1px solid #39282a;
+}
+
+.lp-products-page .lp-search {
+    flex: 1 1 240px;
+    max-width: 350px;
+}
+
+.lp-products-page #lp-search {
+    width: 100%;
+    padding: 13px 15px;
+    outline: none;
+    border: 1px solid #49353a;
+    border-radius: 0;
+    background: #1b1415;
+    color: var(--lp-cream);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.lp-products-page #lp-search::placeholder {
+    color: #9f8e83;
+}
+
+.lp-products-page #lp-search:focus {
+    border-color: var(--lp-gold);
+    box-shadow: 0 0 0 2px rgba(199, 166, 106, 0.1);
+}
+
+.lp-products-page .lp-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.lp-products-page .lp-filter {
+    padding: 11px 16px;
+    cursor: pointer;
+    border: 1px solid #55403d;
+    border-radius: 0;
+    background: transparent;
+    color: var(--lp-cream);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.lp-products-page .lp-filter:hover,
+.lp-products-page .lp-filter.active {
+    border-color: var(--lp-gold);
+    background: var(--lp-gold);
+    color: #130e0e;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+
+.lp-products-page .lp-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 22px;
+}
+
+.lp-products-page .lp-product-card {
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+    border: 1px solid #39282a;
+    background: #171112;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lp-products-page .lp-product-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(199, 166, 106, 0.75);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.lp-products-page .lp-product-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 310px;
+    padding: 25px;
+    background:
+        radial-gradient(ellipse at center, #38282a 0%, #211719 48%, #171112 100%);
+}
+
+.lp-products-page .lp-product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.lp-products-page .lp-product-card:hover .lp-product-image img {
+    transform: scale(1.06);
+}
+
+.lp-products-page .lp-product-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    padding: 7px 10px;
+    background: var(--lp-gold);
+    color: #17100d;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-product-info {
+    padding: 24px 22px 25px;
+    border-top: 1px solid rgba(199, 166, 106, 0.2);
+}
+
+.lp-products-page .lp-brand-name {
+    margin-bottom: 8px;
+    color: var(--lp-gold);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.lp-products-page .lp-scent {
+    min-height: 55px;
+    margin: 0 0 10px;
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.lp-products-page .lp-product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    color: var(--lp-muted);
+    font-size: 11px;
+}
+
+.lp-products-page .lp-product-price {
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.lp-products-page .lp-add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+    cursor: pointer;
+    border: 1px solid var(--lp-gold);
+    border-radius: 0;
+    background: var(--lp-gold);
+    color: #160f0e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+
+.lp-products-page .lp-add-to-cart:hover {
+    background: transparent;
+    color: var(--lp-champagne);
+}
+
+.lp-products-page .lp-add-to-cart:focus-visible,
+.lp-products-page .lp-filter:focus-visible {
+    outline: 2px solid var(--lp-champagne);
+    outline-offset: 3px;
+}
+
+.lp-products-page .lp-no-results {
+    grid-column: 1 / -1;
+    padding: 45px 20px;
+    border: 1px solid #39282a;
+    color: var(--lp-muted);
+    text-align: center;
+}
+
+
+/* =========================================================
+   LUXURY SERVICE PROMISES
+   ========================================================= */
+
+.lp-products-page .lp-services {
+    padding: 65px 7%;
+    border-top: 1px solid rgba(199, 166, 106, 0.3);
+    border-bottom: 1px solid rgba(199, 166, 106, 0.3);
+    background: linear-gradient(120deg, #281319, #170f11 65%, #251218);
+}
+
+.lp-products-page .lp-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lp-products-page .lp-service-item {
+    padding: 10px 18px;
+    text-align: center;
+}
+
+.lp-products-page .lp-service-item .lp-service-icon {
+    display: block;
+    margin-bottom: 14px;
+    color: var(--lp-gold);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 32px;
+}
+
+.lp-products-page .lp-service-item h3 {
+    margin: 0 0 10px;
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.lp-products-page .lp-service-item p {
+    margin: 0;
+    color: var(--lp-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LUXURY FOOTER
+   ========================================================= */
+
+.lp-products-page .lp-footer {
+    padding: 38px 7%;
+    background: #090808;
+    text-align: center;
+}
+
+.lp-products-page .lp-footer h3 {
+    margin: 0 0 10px;
+    color: var(--lp-champagne);
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.lp-products-page .lp-footer p {
+    margin: 0;
+    color: #a99b8b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.lp-products-page .lp-footer a {
+    color: var(--lp-gold);
+    text-decoration: none;
+}
+
+.lp-products-page .lp-footer a:hover {
+    color: var(--lp-champagne);
+}
+
+
+/* =========================================================
+   PRODUCT PAGE TABLET RESPONSIVENESS
+   ========================================================= */
+
+@media screen and (max-width: 1000px) {
+    .lp-products-page .lp-header {
+        padding: 22px 5%;
+    }
+
+    .lp-products-page .lp-navigation {
+        gap: 15px;
+    }
+
+    .lp-products-page .lp-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lp-products-page .lp-collection {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .lp-products-page .lp-product-image {
+        height: 290px;
+    }
+}
+
+
+/* =========================================================
+   PRODUCT PAGE MOBILE RESPONSIVENESS
+   ========================================================= */
+
+@media screen and (max-width: 650px) {
+    .lp-products-page .lp-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lp-products-page .lp-brand {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lp-products-page .lp-brand h1 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .lp-products-page .lp-brand p {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .lp-products-page .lp-navigation {
+        justify-content: center;
+        gap: 8px 16px;
+    }
+
+    .lp-products-page .lp-navigation a {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .lp-products-page .lp-hero {
+        padding: 70px 7%;
+    }
+
+    .lp-products-page .lp-hero::before {
+        inset: 10px;
+    }
+
+    .lp-products-page .lp-hero h2 {
+        font-size: 39px;
+    }
+
+    .lp-products-page .lp-hero p {
+        font-size: 12px;
+    }
+
+    .lp-products-page .lp-collection {
+        padding: 55px 5%;
+    }
+
+    .lp-products-page .lp-toolbar {
+        align-items: stretch;
+    }
+
+    .lp-products-page .lp-search {
+        max-width: none;
+    }
+
+    .lp-products-page .lp-filter-buttons {
+        justify-content: center;
+    }
+
+    .lp-products-page .lp-filter {
+        padding: 10px 12px;
+        font-size: 9px;
+    }
+
+    .lp-products-page .lp-product-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .lp-products-page .lp-product-image {
+        height: 320px;
+    }
+
+    .lp-products-page .lp-scent {
+        min-height: auto;
+    }
+
+    .lp-products-page .lp-service-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .lp-products-page .lp-services {
+        padding: 45px 7%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE SCREENS
+   ========================================================= */
+
+@media screen and (max-width: 380px) {
+    .lp-products-page .lp-hero h2 {
+        font-size: 32px;
+    }
+
+    .lp-products-page .lp-product-image {
+        height: 260px;
+        padding: 18px;
+    }
+
+    .lp-products-page .lp-product-info {
+        padding: 20px 16px;
+    }
+
+    .lp-products-page .lp-scent {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .lp-products-page *,
+    .lp-products-page *::before,
+    .lp-products-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+/* =========================================
+   THE LUXURY PERFUMES — SHARED SITE THEME
+   Applies to all website pages
+   ========================================= */
+
+:root {
+    --luxury-black: #100d0d;
+    --luxury-burgundy: #35151e;
+    --luxury-gold: #c7a66a;
+    --luxury-champagne: #ead8b3;
+    --luxury-cream: #f4eee5;
+    --luxury-muted: #b7a899;
+}
+
+/* Main background and text */
+body {
+    background-color: var(--luxury-black) !important;
+    color: var(--luxury-cream) !important;
+}
+
+/* Headings */
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    color: var(--luxury-champagne);
+}
+
+/* Paragraphs and ordinary text */
+body p,
+body li,
+body label,
+body td,
+body th {
+    color: var(--luxury-cream);
+}
+
+/* Links */
+body a {
+    color: var(--luxury-gold);
+    transition: color 0.2s ease;
+}
+
+body a:hover {
+    color: var(--luxury-champagne);
+}
+
+/* Tables and content panels */
+body table {
+    border-color: var(--luxury-gold);
+}
+
+body td,
+body th {
+    border-color: #49353a;
+}
+
+/* Form fields */
+body input,
+body select,
+body textarea {
+    background-color: #1a1515;
+    color: var(--luxury-cream);
+    border: 1px solid #8f7146;
+}
+
+body input::placeholder,
+body textarea::placeholder {
+    color: var(--luxury-muted);
+}
+
+body input:focus,
+body select:focus,
+body textarea:focus {
+    outline: 1px solid var(--luxury-gold);
+}
+
+/* Buttons */
+body button,
+body input[type="submit"],
+body input[type="reset"] {
+    background-color: var(--luxury-gold);
+    color: var(--luxury-black);
+    border: 1px solid var(--luxury-gold);
+    cursor: pointer;
+}
+
+body button:hover,
+body input[type="submit"]:hover,
+body input[type="reset"]:hover {
+    background-color: var(--luxury-champagne);
+}
+
+/* Horizontal dividers */
+body hr {
+    border-color: var(--luxury-gold);
+}
+
+/* Shared header and footer panels */
+header,
+footer,
+nav {
+    border-color: var(--luxury-gold);
+}
+
+/* Keep images responsive */
+body img {
+    max-width: 100%;
+}
+
+/* ==========================================
+   FINAL LIGHT THEME — ALL WEBSITE PAGES
+   ========================================== */
+
+body,
+body.lp-products-page {
+    background: #fffaf2 !important;
+    background-color: #fffaf2 !important;
+    color: #302626 !important;
+}
+
+/* Force readable text */
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p,
+body li,
+body label,
+body td,
+body th,
+body font,
+body span,
+body div {
+    color: #302626;
+}
+
+/* Cream backgrounds for content sections */
+body table,
+body section,
+body article,
+body .lp-collection {
+    background-color: #fffaf2;
+}
+
+/* Luxury headings */
+body h1,
+body h2,
+body h3,
+body h4 {
+    color: #59323a;
+}
+
+/* Links */
+body a {
+    color: #805b20 !important;
+}
+
+body a:hover {
+    color: #59323a !important;
+}
+
+/* Products page sections */
+.lp-products-page .lp-header,
+.lp-products-page .lp-hero,
+.lp-products-page .lp-collection,
+.lp-products-page .lp-product-card,
+.lp-products-page .lp-product-info,
+.lp-products-page .lp-services,
+.lp-products-page .lp-footer {
+    background: #fffaf2 !important;
+    color: #302626 !important;
+}
+
+.lp-products-page .lp-hero h2,
+.lp-products-page .lp-section-heading h2,
+.lp-products-page .lp-scent,
+.lp-products-page .lp-brand h1,
+.lp-products-page .lp-footer h3,
+.lp-products-page .lp-service-item h3 {
+    color: #59323a !important;
+}
+
+.lp-products-page .lp-hero p,
+.lp-products-page .lp-section-heading p,
+.lp-products-page .lp-product-details,
+.lp-products-page .lp-product-info p,
+.lp-products-page .lp-footer p,
+.lp-products-page .lp-service-item p {
+    color: #504545 !important;
+}
+
+.lp-products-page .lp-navigation a {
+    color: #302626 !important;
+}
+
+.lp-products-page .lp-product-image {
+    background: #f1e8dc !important;
+}
+
+.lp-products-page .lp-filter,
+.lp-products-page #lp-search {
+    background: #ffffff !important;
+    color: #302626 !important;
+}
+
+.lp-products-page .lp-product-tag,
+.lp-products-page .lp-add-to-cart,
+.lp-products-page .lp-filter.active,
+.lp-products-page .lp-filter:hover {
+    background: #c5a059 !important;
+    color: #21191a !important;
+}
+
+/* Forms */
+body input,
+body select,
+body textarea {
+    background: #ffffff !important;
+    color: #302626 !important;
+    border: 1px solid #c5a059;
+}
+
+/* Buttons */
+body button,
+body input[type="submit"],
+body input[type="reset"] {
+    background: #59323a !important;
+    color: #ffffff !important;
+}
+
+/* Gold dividers */
+body hr {
+    border-color: #c5a059 !important;
+}
+
+/* LUXURY SHOPPING BAG */
+
+.lp-cart-panel {
+    margin: 30px 0;
+    padding: 26px;
+    background: #fffaf2;
+    color: #302626;
+    border: 1px solid #c5a059;
+    border-radius: 12px;
+}
+
+.lp-cart-panel h2,
+.lp-cart-item h3 {
+    color: #59323a;
+}
+
+.lp-cart-panel h2 {
+    margin-top: 8px;
+    font-size: 28px;
+}
+
+.lp-cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e4d4bb;
+}
+
+.lp-cart-item h3 {
+    margin-bottom: 6px;
+}
+
+.lp-cart-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.lp-cart-controls button,
+.lp-cart-action {
+    padding: 10px 14px;
+    border: 1px solid #c5a059;
+    border-radius: 5px;
+    background: #59323a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lp-cart-controls button:hover,
+.lp-cart-action:hover {
+    background: #805b20;
+}
+
+.lp-cart-controls button:disabled,
+.lp-cart-action:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.lp-cart-summary {
+    margin-top: 22px;
+}
+
+.lp-cart-summary strong {
+    color: #59323a;
+    font-size: 20px;
+}
+
+.lp-cart-action {
+    margin: 8px 8px 8px 0;
+}
+
+#lp-cart-message {
+    color: #59323a;
+    font-weight: 600;
+}
+
+.lp-products-page [hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .lp-cart-panel {
+        padding: 18px;
+    }
+
+    .lp-cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+}

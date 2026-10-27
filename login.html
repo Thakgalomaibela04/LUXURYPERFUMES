@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Login | The Luxury Perfumes</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <a href="login.html" style="background-color: #111; color: #fff; padding: 6px 12px; border-bottom: 2px solid #c5a059;"><b>LOGIN</b></a>
 </head>
 <body bgcolor="white" text="black">
 
@@ -10,7 +13,7 @@
         <tr align="center">
             <td>
                 <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
-                 <IMG SRC="_image/LOGO.jpg">
+                <IMG SRC="_image/LOGO.jpg" alt="The Luxury Perfumes Logo">
                 <hr width="85%" size="1" color="black" />
                 <p>
                     <font face="Times New Roman" size="3">
@@ -21,6 +24,7 @@
                         <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
                         <a href="signup.html">SIGN UP</a> &nbsp;|&nbsp;
                         <a href="login.html"><b>LOGIN</b></a>
+                        <a href="sitemap.html">SITEMAP</a>
                     </font>
                 </p>
                 <hr width="85%" size="1" color="black" />
@@ -39,15 +43,16 @@
                 <hr width="80%" size="1" color="black" />
                 <br />
 
-                <form action="#" method="post">
+                <!-- ADDED loginForm ID -->
+                <form id="loginForm">
                     <table width="100%" cellpadding="8" cellspacing="0" border="0">
                         <tr>
                             <td><b>Email:</b></td>
-                            <td><input type="text" name="email" size="25" /></td>
+                            <td><input type="email" id="loginEmail" name="email" size="25" required /></td>
                         </tr>
                         <tr>
                             <td><b>Password:</b></td>
-                            <td><input type="password" name="password" size="25" /></td>
+                            <td><input type="password" id="loginPassword" name="password" size="25" required /></td>
                         </tr>
                         <tr align="center">
                             <td colspan="2">
@@ -57,7 +62,7 @@
                         </tr>
                     </table>
                 </form>
-                
+
                 <p align="center">
                     <font size="2">Don't have an account? <a href="signup.html">Sign Up Here</a></font>
                 </p>
@@ -67,11 +72,15 @@
 
     <br /><br /><br /><hr width="85%" size="1" color="black" />
 
+    <!-- FOOTER -->
     <table width="100%" cellpadding="10" border="0">
         <tr align="center">
             <td><p><font face="Times New Roman" size="2">&copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.</font></p></td>
         </tr>
     </table>
+
+  <script src="js_assets/forms.js"></script>
+<script src="js_assets/main.js"></script>
 
 </body>
 </html>

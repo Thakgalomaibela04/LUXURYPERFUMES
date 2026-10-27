@@ -1,164 +1,401 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Products & Services | The Luxury Perfumes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Fragrances | The Luxury Perfumes</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body bgcolor="white" text="black">
 
-    <!-- GLOBAL HEADER & NAVIGATION -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td>
-                <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
-                <img src="_image/LOGO.jpg" alt="The Luxury Perfumes Logo" />
-                <hr width="85%" size="1" color="black" />
+<body class="lp-products-page">
+
+    <!-- HEADER -->
+    <header class="lp-header">
+        <a href="index.html" class="lp-brand">
+            <img src="_image/LOGO.jpg"
+                 alt="The Luxury Perfumes logo"
+                 class="lp-logo">
+
+            <span>THE LUXURY PERFUMES</span>
+            <small>YOUR SIGNATURE. YOUR SCENT.</small>
+        </a>
+            <nav class="lp-navigation">
+            <a href="index.html">HOME</a>
+            <a href="products.html" class="lp-active">COLLECTION</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="enquiries.html">ENQUIRIES</a>
+            <a href="contacts.html">CONTACTS</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="login.html">LOGIN</a>
+            <a href="sitemap.html">SITEMAP</a>
+             <a href="#lp-cart" class="lp-cart-link">
+            BAG (<span id="lp-cart-count" aria-live="polite">0</span>)
+            </a>
+            </nav>
+
+    </header>
+
+    <!-- LUXURY BANNER -->
+    <section class="lp-hero">
+        <p class="lp-eyebrow">THE ART OF FINE FRAGRANCE</p>
+
+        <h1>Find Your Signature Scent</h1>
+
+        <p>
+            Discover exceptional fragrances created to leave
+            a lasting impression.
+        </p>
+
+        <a href="#lp-products" class="lp-hero-button">
+            EXPLORE THE COLLECTION
+        </a>
+    </section>
+
+    <!-- COLLECTION INTRODUCTION -->
+    <main>
+        <section class="lp-collection" id="lp-products">
+
+            <div class="lp-section-heading">
+                <p class="lp-eyebrow">CURATED FOR YOU</p>
+                <h2>The Fragrance Collection</h2>
                 <p>
-                    <font face="Times New Roman" size="3">
-                        <a href="index.html">HOME</a> &nbsp;|&nbsp;
-                        <a href="products.html"><b>PRODUCTS & SERVICES</b></a> &nbsp;|&nbsp;
-                        <a href="about.html">ABOUT US</a> &nbsp;|&nbsp;
-                        <a href="enquiries.html">ENQUIRIES</a> &nbsp;|&nbsp;
-                        <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
-                        <a href="signup.html">SIGN UP</a> &nbsp;|&nbsp;
-                        <a href="login.html">LOGIN</a>
-                    </font>
+                    Timeless classics. Modern icons. Unforgettable scents.
                 </p>
-                <hr width="85%" size="1" color="black" />
-            </td>
-        </tr>
-    </table>
+            </div>
 
-    <br />
+            <!-- SEARCH AND FILTERS -->
+            <div class="lp-toolbar">
+                <label class="lp-search">
+                    <span class="lp-visually-hidden">Search perfumes</span>
+                    <input type="search"
+                           id="lp-search"
+                           placeholder="Search by perfume or brand...">
+                </label>
 
-    <!-- PAGE TITLE -->
-    <table width="80%" align="center" cellpadding="10" border="0">
-        <tr align="center">
-            <td>
-                <h2><font face="Times New Roman" size="6">THE FRAGRANCE CATALOGUE</font></h2>
-                <p><font face="Times New Roman" size="3"><i>Explore our rare selection of world-famous designer fragrances.</i></font></p>
-            </td>
-        </tr>
-    </table>
+                <div class="lp-filters" aria-label="Filter products">
+                    <button type="button"
+                            class="lp-filter lp-selected"
+                            data-filter="all">
+                        ALL FRAGRANCES
+                    </button>
 
-    <br />
+                    <button type="button"
+                            class="lp-filter"
+                            data-filter="women">
+                        WOMEN
+                    </button>
 
-    <!-- PRODUCTS TABLE WITH IMAGES AND ADD TO CART COLUMN -->
-    <table width="95%" align="center" cellpadding="12" cellspacing="0" border="1">
-        <tr bgcolor="black" align="center">
-            <th><font face="Times New Roman" color="white" size="3">BOTTLE IMAGE</font></th>
-            <th><font face="Times New Roman" color="white" size="3">HOUSE / BRAND</font></th>
-            <th><font face="Times New Roman" color="white" size="3">FRAGRANCE</font></th>
-            <th><font face="Times New Roman" color="white" size="3">SCENT PROFILE</font></th>
-            <th><font face="Times New Roman" color="white" size="3">VOLUME</font></th>
-            <th><font face="Times New Roman" color="white" size="3">PRICE</font></th>
-            <th><font face="Times New Roman" color="white" size="3">ACTION</font></th>
-        </tr>
-        <tr align="center" valign="middle">
-            <td>
-                <img src="_image/9583352119326.webp" width="80" height="100" border="1" alt="Chanel N5 Bottle" />
-            </td>
-            <td><b>Chanel</b></td>
-            <td>N°5 Eau De Parfum</td>
-            <td>Aldehydes, May Rose, Jasmine, Bourbon Vanilla</td>
-            <td>100 ml</td>
-            <td>R2669.55</td>
-            <td>
-                <form action="#" method="post">
-                    <input type="hidden" name="product_id" value="chanel_n5" />
-                    <input type="submit" value="ADD TO CART" />
-                </form>
-            </td>
-        </tr>
-        <tr align="center" valign="middle">
-            <td>
-                <img src="_image/41OjaiRXz+L.jpg" width="80" height="100" border="1" alt="Dior Sauvage Bottle" />
-            </td>
-            <td><b>Dior</b></td>
-            <td>Sauvage Elixir</td>
-            <td>Cinnamon, Nutmeg, Cardamom, Lavender, Licorice</td>
-            <td>60 ml</td>
-            <td>R3721.19</td>
-            <td>
-                <form action="#" method="post">
-                    <input type="hidden" name="product_id" value="dior_sauvage" />
-                    <input type="submit" value="ADD TO CART" />
-                </form>
-            </td>
-        </tr>
-        <tr align="center" valign="middle">
-            <td>
-                <img src="_image/OIP (6).webp" width="80" height="100" border="1" alt="Valentino Bottle" />
-            </td>
-            <td><b>Valentino</b></td>
-            <td>Born In Roma Intense</td>
-            <td>Bourbon Vanilla, Jasmine, Benzoin Resin</td>
-            <td>100 ml</td>
-            <td>R2524.15</td>
-            <td>
-                <form action="#" method="post">
-                    <input type="hidden" name="product_id" value="valentino_roma" />
-                    <input type="submit" value="ADD TO CART" />
-                </form>
-            </td>
-        </tr>
-        <tr align="center" valign="middle">
-            <td>
-                <img src="_image/OIP (15).webp" width="80" height="100" border="1" alt="Versace Eros Bottle" />
-            </td>
-            <td><b>Versace</b></td>
-            <td>Eros Flame</td>
-            <td>Italian Lemon, Mandarin, Black Pepper, Tonka Bean</td>
-            <td>100 ml</td>
-            <td>R2265.56</td>
-            <td>
-                <form action="#" method="post">
-                    <input type="hidden" name="product_id" value="versace_eros" />
-                    <input type="submit" value="ADD TO CART" />
-                </form>
-            </td>
-        </tr>
-        <tr align="center" valign="middle">
-            <td>
-                <img src="_image/dolcegabbana-dolce-gabbana-perfume-perfumeimportado-fragancia-3-50f8ab6beb5714e27b17071733455463-1024-1024.png" width="80" height="100" border="1" alt="Dolce and Gabbana K Bottle" />
-            </td>
-            <td><b>Dolce & Gabbana</b></td>
-            <td>K Eau De Parfum</td>
-            <td>Blood Orange, Sicilian Lemon, Tuscan Cedarwood</td>
-            <td>100 ml</td>
-            <td>R2184.65</td>
-            <td>
-                <form action="#" method="post">
-                    <input type="hidden" name="product_id" value="dg_k" />
-                    <input type="submit" value="ADD TO CART" />
-                </form>
-            </td>
-        </tr>
-    </table>
+                    <button type="button"
+                            class="lp-filter"
+                            data-filter="men">
+                        MEN
+                    </button>
 
-    <br /><br />
+                    <button type="button"
+                            class="lp-filter"
+                            data-filter="unisex">
+                        UNISEX
+                    </button>
+                </div>
+            </div>
 
-    <!-- BESPOKE SERVICES -->
-    <table width="90%" align="center" cellpadding="15" cellspacing="0" border="1">
-        <tr>
-            <td>
-                <h3 align="center"><font face="Times New Roman" size="5">EXCLUSIVE PRIVATE SERVICES</font></h3>
-                <hr width="40%" size="1" color="black" />
-                <ul type="disc">
-                    <li><b>Private Scent Consultation:</b> Meet with our master perfume sommeliers to craft your personal signature scent palette.</li>
-                    <li><b>Custom Glass Engraving:</b> Personalize bottle designs with initials, bespoke dates, or custom family crests.</li>
-                    <li><b>VIP Concierge & Worldwide Express Delivery:</b> White-glove delivery service right to your doorstep anywhere in the world.</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+            <p class="lp-results" id="lp-results" aria-live="polite">
+                Showing 5 fragrances
+            </p>
+            
+                <!-- LUXURY SHOPPING BAG -->
+                <section class="lp-cart-panel" id="lp-cart">
+                    <p class="lp-eyebrow">YOUR SELECTED FRAGRANCES</p>
+                    <h2>Your Shopping Bag</h2>
 
-    <br /><br /><hr width="85%" size="1" color="black" />
+                    <p id="lp-cart-empty">
+                        Your bag is empty. Discover a fragrance you love.
+                    </p>
 
-    <table width="100%" cellpadding="10" border="0">
-        <tr align="center">
-            <td><p><font face="Times New Roman" size="2">&copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.</font></p></td>
-        </tr>
-    </table>
+                    <div id="lp-cart-items" aria-live="polite"></div>
 
+                    <div class="lp-cart-summary">
+                        <p>
+                            Subtotal:
+                            <strong id="lp-cart-total">R0.00</strong>
+                        </p>
+
+                        <button type="button" id="lp-clear-cart"
+                                class="lp-cart-action">
+                            CLEAR BAG
+                        </button>
+
+                        <button type="button" id="lp-checkout"
+                                class="lp-cart-action">
+                            PROCEED TO CHECKOUT
+                        </button>
+
+                        <p id="lp-cart-message"
+                        role="status" aria-live="polite"></p>
+                    </div>
+                </section>
+
+            <!-- PRODUCT GRID -->
+            <div class="lp-product-grid">
+
+
+                <!-- PRODUCT 1 -->
+                <article class="lp-product-card"
+                         data-category="women"
+                         data-name="Chanel N°5 Eau De Parfum Chanel">
+
+                    <div class="lp-product-image">
+                        <span class="lp-product-tag">TIMELESS ICON</span>
+
+                        <img src="_image/9583352119326.webp"
+                             alt="Chanel N°5 Eau De Parfum"
+                             loading="lazy">
+                    </div>
+
+                    <div class="lp-product-info">
+                        <p class="lp-brand-name">CHANEL</p>
+                        <h3>N°5 Eau De Parfum</h3>
+
+                        <p class="lp-scent">
+                            Aldehydes, May Rose, Jasmine and Bourbon Vanilla
+                        </p>
+
+                        <div class="lp-product-details">
+                            <span>100 ml</span>
+                            <strong>R2,669.55</strong>
+                        </div>
+
+                        <button type="button"
+                                class="lp-add-to-cart"
+                                data-id="chanel_n5"
+                                data-name="Chanel N°5 Eau De Parfum"
+                                data-price="2669.55">
+                            ADD TO BAG <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 2 -->
+                <article class="lp-product-card"
+                         data-category="men"
+                         data-name="Sauvage Elixir Dior">
+
+                    <div class="lp-product-image">
+                        <span class="lp-product-tag">INTENSE & BOLD</span>
+
+                        <img src="_image/41OjaiRXz+L.jpg"
+                             alt="Dior Sauvage Elixir"
+                             loading="lazy">
+                    </div>
+
+                    <div class="lp-product-info">
+                        <p class="lp-brand-name">DIOR</p>
+                        <h3>Sauvage Elixir</h3>
+
+                        <p class="lp-scent">
+                            Cinnamon, Nutmeg, Cardamom, Lavender and Licorice
+                        </p>
+
+                        <div class="lp-product-details">
+                            <span>60 ml</span>
+                            <strong>R3,721.19</strong>
+                        </div>
+
+                        <button type="button"
+                                class="lp-add-to-cart"
+                                data-id="dior_sauvage"
+                                data-name="Dior Sauvage Elixir"
+                                data-price="3721.19">
+                            ADD TO BAG <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 3 -->
+                <article class="lp-product-card"
+                         data-category="women"
+                         data-name="Born In Roma Intense Valentino">
+
+                    <div class="lp-product-image">
+                        <span class="lp-product-tag">MODERN ELEGANCE</span>
+
+                        <img src="_image/OIP (6).webp"
+                             alt="Valentino Born In Roma Intense"
+                             loading="lazy">
+                    </div>
+
+                    <div class="lp-product-info">
+                        <p class="lp-brand-name">VALENTINO</p>
+                        <h3>Born In Roma Intense</h3>
+
+                        <p class="lp-scent">
+                            Bourbon Vanilla, Jasmine and Benzoin Resin
+                        </p>
+
+                        <div class="lp-product-details">
+                            <span>100 ml</span>
+                            <strong>R2,524.15</strong>
+                        </div>
+
+                        <button type="button"
+                                class="lp-add-to-cart"
+                                data-id="valentino_roma"
+                                data-name="Valentino Born In Roma Intense"
+                                data-price="2524.15">
+                            ADD TO BAG <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 4 -->
+                <article class="lp-product-card"
+                         data-category="men"
+                         data-name="Eros Flame Versace">
+
+                    <div class="lp-product-image">
+                        <span class="lp-product-tag">BOLD & MAGNETIC</span>
+
+                        <img src="_image/OIP (15).webp"
+                             alt="Versace Eros Flame"
+                             loading="lazy">
+                    </div>
+
+                    <div class="lp-product-info">
+                        <p class="lp-brand-name">VERSACE</p>
+                        <h3>Eros Flame</h3>
+
+                        <p class="lp-scent">
+                            Italian Lemon, Mandarin, Black Pepper and Tonka Bean
+                        </p>
+
+                        <div class="lp-product-details">
+                            <span>100 ml</span>
+                            <strong>R2,265.56</strong>
+                        </div>
+
+                        <button type="button"
+                                class="lp-add-to-cart"
+                                data-id="versace_eros"
+                                data-name="Versace Eros Flame"
+                                data-price="2265.56">
+                            ADD TO BAG <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 5 -->
+                <article class="lp-product-card"
+                         data-category="men"
+                         data-name="K Eau De Parfum Dolce Gabbana">
+
+                    <div class="lp-product-image">
+                        <span class="lp-product-tag">REFINED CHARACTER</span>
+
+                        <img
+                            src="_image/dolcegabbana-dolce-gabbana-perfume-perfumeimportado-fragancia-3-50f8ab6beb5714e27b17071733455463-1024-1024.png"
+                            alt="Dolce and Gabbana K Eau De Parfum"
+                            loading="lazy">
+                    </div>
+
+                    <div class="lp-product-info">
+                        <p class="lp-brand-name">DOLCE & GABBANA</p>
+                        <h3>K Eau De Parfum</h3>
+
+                        <p class="lp-scent">
+                            Blood Orange, Sicilian Lemon and Tuscan Cedarwood
+                        </p>
+
+                        <div class="lp-product-details">
+                            <span>100 ml</span>
+                            <strong>R2,184.65</strong>
+                        </div>
+
+                        <button type="button"
+                                class="lp-add-to-cart"
+                                data-id="dg_k"
+                                data-name="Dolce & Gabbana K Eau De Parfum"
+                                data-price="2184.65">
+                            ADD TO BAG <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="lp-no-results" id="lp-no-results" hidden>
+                No fragrances found. Try another search.
+            </p>
+        </section>
+
+        <!-- EXCLUSIVE SERVICES -->
+        <section class="lp-services">
+            <div class="lp-section-heading">
+                <p class="lp-eyebrow">BEYOND THE BOTTLE</p>
+                <h2>The Luxury Experience</h2>
+                <p>Thoughtful details make every fragrance more personal.</p>
+            </div>
+
+            <div class="lp-service-grid">
+
+                <article class="lp-service">
+                    <span class="lp-service-number">01</span>
+                    <h3>Private Scent Consultation</h3>
+                    <p>
+                        Discover fragrance families and find a scent
+                        that reflects your personal style.
+                    </p>
+                </article>
+
+                <article class="lp-service">
+                    <span class="lp-service-number">02</span>
+                    <h3>Custom Bottle Engraving</h3>
+                    <p>
+                        Add a personal touch to selected bottles with
+                        initials or a meaningful date.
+                    </p>
+                </article>
+
+                <article class="lp-service">
+                    <span class="lp-service-number">03</span>
+                    <h3>Luxury Gift Selection</h3>
+                    <p>
+                        Explore thoughtful fragrance gifts for
+                        celebrations and special occasions.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="lp-footer">
+        <a href="index.html" class="lp-footer-brand">
+            THE LUXURY PERFUMES
+        </a>
+
+        <p>Discover the art of exceptional fragrance.</p>
+
+        <div class="lp-footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contacts.html">Contact</a>
+            <a href="enquiries.html">Enquiries</a>
+        </div>
+
+        <p class="lp-copyright">
+            &copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+
+   
+<!-- JAVASCRIPT LINKS -->
+    <script src="js_assets/cart.js"></script>
+    <script src="js_assets/forms.js"></script>
+    <script src="js_assets/main.js"></script>
+    </body>
+    </html>
 </body>
 </html>

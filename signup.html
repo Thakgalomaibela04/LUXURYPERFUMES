@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Sign Up | The Luxury Perfumes</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body bgcolor="white" text="black">
 
@@ -10,7 +12,7 @@
         <tr align="center">
             <td>
                 <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
-                 <IMG SRC="_image/LOGO.jpg">
+                <IMG SRC="_image/LOGO.jpg" alt="The Luxury Perfumes Logo">
                 <hr width="85%" size="1" color="black" />
                 <p>
                     <font face="Times New Roman" size="3">
@@ -21,6 +23,7 @@
                         <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
                         <a href="signup.html"><b>SIGN UP</b></a> &nbsp;|&nbsp;
                         <a href="login.html">LOGIN</a>
+                        <a href="sitemap.html">SITEMAP</a>
                     </font>
                 </p>
                 <hr width="85%" size="1" color="black" />
@@ -30,7 +33,7 @@
 
     <br />
 
-  
+    <!-- SIGN-UP FORM -->
     <table width="50%" align="center" cellpadding="15" cellspacing="0" border="1">
         <tr>
             <td>
@@ -39,28 +42,29 @@
                 <hr width="80%" size="1" color="black" />
                 <br />
 
-                <form action="#" method="post">
+                <!-- ADDED signupForm ID -->
+                <form id="signupForm">
                     <table width="100%" cellpadding="8" cellspacing="0" border="0">
                         <tr>
                             <td><b>First Name:</b></td>
-                            <td><input type="text" name="firstname" size="30" /></td>
+                            <td><input type="text" id="firstname" name="firstname" size="30" required /></td>
                         </tr>
                         <tr>
                             <td><b>Last Name:</b></td>
-                            <td><input type="text" name="lastname" size="30" /></td>
+                            <td><input type="text" id="lastname" name="lastname" size="30" required /></td>
                         </tr>
                         <tr>
                             <td><b>Email Address:</b></td>
-                            <td><input type="text" name="email" size="30" /></td>
+                            <td><input type="email" id="email" name="email" size="30" required /></td>
                         </tr>
                         <tr>
                             <td><b>Create Password:</b></td>
-                            <td><input type="password" name="password" size="30" /></td>
+                            <td><input type="password" id="password" name="password" size="30" minlength="8" required /></td>
                         </tr>
                         <tr>
                             <td><b>Favorite Perfume:</b></td>
                             <td>
-                                <select name="favorite_brand">
+                                <select id="favorite_brand" name="favorite_brand" required>
                                     <option value="chanel">Chanel</option>
                                     <option value="dior">Dior</option>
                                     <option value="valentino">Valentino</option>
@@ -83,11 +87,15 @@
 
     <br /><br /><hr width="85%" size="1" color="black" />
 
+    <!-- FOOTER -->
     <table width="100%" cellpadding="10" border="0">
         <tr align="center">
             <td><p><font face="Times New Roman" size="2">&copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.</font></p></td>
         </tr>
     </table>
+
+    <script src="js_assets/forms.js"></script>
+<script src="js_assets/main.js"></script>
 
 </body>
 </html>
