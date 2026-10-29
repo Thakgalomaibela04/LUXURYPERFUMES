@@ -1,82 +1,78 @@
+/**
+ * THE LUXURY PERFUMES — account forms
+ * Demonstration sign-up and login, stored in localStorage only.
+ */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const signupForm = document.getElementById("signupForm");
-    const loginForm = document.getElementById("loginForm");
+    "use strict";
 
-    const STORAGE_KEY = "luxuryPerfumeUsers";
+    var STORAGE_KEY = "luxuryPerfumeUsers";
 
-    // Display feedback messages
+    var signupForm = document.getElementById("signupForm");
+    var loginForm = document.getElementById("loginForm");
+
+    /* ---------- helpers ---------- */
+
     function showMessage(form, message, success) {
-        let messageBox = form.querySelector(".form-message");
+        var box = form.querySelector(".form-message");
 
-        if (!messageBox) {
-            messageBox = document.createElement("p");
-            messageBox.className = "form-message";
-            messageBox.setAttribute("role", "status");
-            form.prepend(messageBox);
+        if (!box) {
+            box = document.createElement("p");
+            box.className = "form-message";
+            box.setAttribute("role", "status");
+            form.appendChild(box);
         }
 
-        messageBox.textContent = message;
-        messageBox.style.color = success ? "green" : "red";
-        messageBox.style.fontWeight = "bold";
-        messageBox.style.textAlign = "center";
+        box.textContent = message;
+        box.className = "form-message is-visible " + (success ? "success" : "error");
     }
 
-    // Read registered demo accounts
+    function clearMessage(form) {
+        var box = form.querySelector(".form-message");
+        if (box) box.className = "form-message";
+    }
+
     function getUsers() {
         try {
-            const users = JSON.parse(
-                localStorage.getItem(STORAGE_KEY) || "[]"
-            );
-
+            var users = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
             return Array.isArray(users) ? users : [];
         } catch (error) {
             return [];
         }
     }
 
-    // SIGN UP
+    /* ---------- sign up ---------- */
+
     if (signupForm) {
         signupForm.addEventListener("submit", function (event) {
             event.preventDefault();
+            clearMessage(signupForm);
 
-            const firstName =
-                signupForm.elements["firstname"].value.trim();
-            const lastName =
-                signupForm.elements["lastname"].value.trim();
-            const email =
-                signupForm.elements["email"].value.trim().toLowerCase();
-            const password =
-                signupForm.elements["password"].value;
-            const favorite =
-                signupForm.elements["favorite_brand"].value;
+            var firstName = signupForm.elements["firstname"].value.trim();
+            var lastName = signupForm.elements["lastname"].value.trim();
+            var email = signupForm.elements["email"].value.trim().toLowerCase();
+            var password = signupForm.elements["password"].value;
+            var favourite = signupForm.elements["favorite_brand"].value;
 
             if (!firstName || !lastName || !email || !password) {
-                showMessage(
-                    signupForm,
-                    "Please complete all required fields.",
-                    false
-                );
+                showMessage(signupForm, "Please complete every required field.", false);
+                return;
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+                showMessage(signupForm, "Please enter a valid email address.", false);
                 return;
             }
 
             if (password.length < 8) {
-                showMessage(
-                    signupForm,
-                    "Your password must be at least 8 characters.",
-                    false
-                );
+                showMessage(signupForm, "Your password must be at least 8 characters.", false);
                 return;
             }
 
-            const users = getUsers();
+            var users = getUsers();
 
-            if (users.some(user => user.email === email)) {
-                showMessage(
-                    signupForm,
-                    "This email is already registered. Please log in.",
-                    false
-                );
+            if (users.some(function (user) { return user.email === email; })) {
+                showMessage(signupForm, "This email is already registered. Please log in.", false);
                 return;
             }
 
@@ -85,64 +81,56 @@ document.addEventListener("DOMContentLoaded", function () {
                 lastname: lastName,
                 email: email,
                 password: password,
-                favorite_brand: favorite
+                favorite_brand: favourite
             });
 
             try {
-                localStorage.setItem(
-                    STORAGE_KEY,
-                    JSON.stringify(users)
-                );
-
-                showMessage(
-                    signupForm,
-                    "Registration successful! Welcome to The Luxury Perfumes VIP Club.",
-                    true
-                );
-
-                signupForm.reset();
-
-                // Go to login after successful registration
-                setTimeout(function () {
-                    window.location.href = "login.html";
-                }, 1500);
-
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(users));
             } catch (error) {
-                showMessage(
-                    signupForm,
-                    "Registration could not be saved in this browser.",
-                    false
-                );
+                showMessage(signupForm, "Registration could not be saved in this browser.", false);
+                return;
             }
+
+            showMessage(
+                signupForm,
+                "Welcome to the house, " + firstName + ". Your account is ready — taking you to sign in…",
+                true
+            );
+
+            signupForm.reset();
+
+            window.setTimeout(function () {
+                window.location.href = "login.html";
+            }, 1600);
         });
     }
 
-    // LOGIN — only one login handler
+    /* ---------- log in ---------- */
+
     if (loginForm) {
         loginForm.addEventListener("submit", function (event) {
             event.preventDefault();
+            clearMessage(loginForm);
 
-            const email =
-                loginForm.elements["email"].value.trim().toLowerCase();
-            const password =
-                loginForm.elements["password"].value;
+            var email = loginForm.elements["email"].value.trim().toLowerCase();
+            var password = loginForm.elements["password"].value;
 
-            const users = getUsers();
+            if (!email || !password) {
+                showMessage(loginForm, "Please enter your email and password.", false);
+                return;
+            }
 
-            const user = users.find(function (account) {
-                return account.email === email &&
-                       account.password === password;
+            var user = getUsers().find(function (account) {
+                return account.email === email;
             });
 
-            if (user) {
-                // Redirect immediately after successful login
-                window.location.href = "./index.html";
+            if (user && user.password === password) {
+                showMessage(loginForm, "Welcome back. Opening your account…", true);
+                window.setTimeout(function () {
+                    window.location.href = "index.html";
+                }, 900);
             } else {
-                showMessage(
-                    loginForm,
-                    "Invalid email or password. Please register first or try again.",
-                    false
-                );
+                showMessage(loginForm, "Invalid email or password. Please register first or try again.", false);
             }
         });
     }

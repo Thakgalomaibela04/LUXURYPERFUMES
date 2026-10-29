@@ -1,453 +1,212 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap | The Luxury Perfumes</title>
+    <meta name="description" content="Every page of The Luxury Perfumes website in one place.">
+    <meta name="theme-color" content="#0a0a0b">
 
-    <title>Website Sitemap | The Luxury Perfumes</title>
-    <font face="Times New Roman" size="3">
-                        <a href="index.html"><b>HOME</b></a> 
-                        <a href="products.html">PRODUCTS & SERVICES</a> 
-                        <a href="about.html">ABOUT US</a> 
-                        <a href="enquiries.html">ENQUIRIES</a> 
-                        <a href="contacts.html">CONTACTS</a> 
-                        <a href="signup.html">SIGN UP</a> 
-                        <a href="login.html">LOGIN</a>
-                        <a href="sitemap.html">SITEMAP</a>
-     </font>
-
-    <style>
-        :root {
-            --black: #100d0d;
-            --burgundy: #35151e;
-            --gold: #c7a66a;
-            --champagne: #ead8b3;
-            --cream: #f4eee5;
-            --muted: #b7a899;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: var(--black);
-            color: var(--cream);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-        }
-
-        header {
-            padding: 25px 7%;
-            background: #090808;
-            border-bottom: 1px solid var(--gold);
-            text-align: center;
-        }
-
-        header h1 {
-            color: var(--champagne);
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: clamp(24px, 4vw, 38px);
-            letter-spacing: 4px;
-        }
-
-        header p {
-            margin-top: 8px;
-            color: var(--muted);
-            font-size: 11px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            padding: 18px;
-            border-bottom: 1px solid #39282a;
-        }
-
-        nav a {
-            color: var(--cream);
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        nav a:hover {
-            color: var(--gold);
-        }
-
-        .hero {
-            padding: 65px 20px 45px;
-            text-align: center;
-            background:
-                radial-gradient(ellipse at top, #51212e 0%, #211014 45%,
-                var(--black) 100%);
-        }
-
-        .eyebrow {
-            margin-bottom: 12px;
-            color: var(--gold);
-            font-size: 10px;
-            font-weight: bold;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .hero h2 {
-            margin-bottom: 15px;
-            color: var(--champagne);
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: clamp(32px, 5vw, 52px);
-            font-weight: normal;
-        }
-
-        .hero p {
-            max-width: 600px;
-            margin: auto;
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 30px 25px 70px;
-        }
-
-        .home-card {
-            max-width: 450px;
-            margin: 0 auto 35px;
-            padding: 25px;
-            border: 1px solid var(--gold);
-            background: linear-gradient(135deg, #35151e, #171112);
-            text-align: center;
-        }
-
-        .home-card .symbol {
-            font-size: 30px;
-        }
-
-        .home-card h3 {
-            margin: 8px 0;
-            color: var(--champagne);
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 25px;
-            font-weight: normal;
-        }
-
-        .home-card p {
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        .connector {
-            width: 1px;
-            height: 35px;
-            margin: -35px auto 35px;
-            background: var(--gold);
-        }
-
-        .section-title {
-            margin-bottom: 25px;
-            color: var(--champagne);
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 29px;
-            font-weight: normal;
-            text-align: center;
-        }
-
-        .page-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 18px;
-        }
-
-        .page-card {
-            display: block;
-            min-width: 0;
-            padding: 25px 20px;
-            border: 1px solid #493138;
-            background: #191213;
-            color: var(--cream);
-            text-decoration: none;
-            transition: 0.25s ease;
-        }
-
-        .page-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--gold);
-            background: #27171b;
-        }
-
-        .page-card .symbol {
-            display: block;
-            margin-bottom: 12px;
-            color: var(--gold);
-            font-size: 27px;
-        }
-
-        .page-card h3 {
-            margin-bottom: 8px;
-            color: var(--champagne);
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 22px;
-            font-weight: normal;
-        }
-
-        .page-card .filename {
-            display: inline-block;
-            margin-bottom: 12px;
-            color: var(--gold);
-            font-size: 11px;
-            overflow-wrap: anywhere;
-        }
-
-        .page-card p {
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        .support-section {
-            margin-top: 55px;
-            padding: 30px;
-            border: 1px solid #493138;
-            background: #171112;
-        }
-
-        .support-section h2 {
-            margin-bottom: 18px;
-            color: var(--champagne);
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 26px;
-            font-weight: normal;
-        }
-
-        .support-list {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 20px;
-        }
-
-        .support-item {
-            padding: 15px;
-            border-left: 2px solid var(--gold);
-            background: #211719;
-        }
-
-        .support-item h3 {
-            margin-bottom: 7px;
-            color: var(--gold);
-            font-size: 13px;
-        }
-
-        .support-item p {
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        footer {
-            padding: 28px 20px;
-            border-top: 1px solid #39282a;
-            background: #090808;
-            color: var(--muted);
-            font-size: 11px;
-            text-align: center;
-        }
-
-        footer strong {
-            color: var(--champagne);
-        }
-
-        @media (max-width: 750px) {
-            .page-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .support-list {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                gap: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 23px;
-                letter-spacing: 2px;
-            }
-
-            .page-grid {
-                grid-template-columns: 1fr;
-            }
-
-            main {
-                padding-right: 18px;
-                padding-left: 18px;
-            }
-
-            .support-section {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>THE LUXURY PERFUMES</h1>
-        <p>Elegance in Every Drop</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announce">
+        Complimentary delivery on orders over R1&nbsp;500 · Johannesburg · Cape Town · Pretoria
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Luxury Perfumes — home">
+                <img class="brand-mark" src="images/logo.jpg" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">The Luxury Perfumes</span>
+                    <span class="brand-tag">Haute Parfumerie</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+            </button>
+
+            <nav class="nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Boutiques</a>
+                <a href="enquiries.html">Enquiries</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a class="cart-trigger" href="products.html#lp-cart" data-cart-open>
+                    Bag <span id="lp-cart-count" aria-live="polite">0</span>
+                </a>
+            </nav>
+        </div>
     </header>
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About Us</a>
-        <a href="enquiries.html">Enquiries</a>
-        <a href="contacts.html">Contact</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Sign Up</a>
-    </nav>
+    <main id="main">
 
-    <section class="hero">
-        <p class="eyebrow">Explore Our Website</p>
-        <h2>Website Sitemap</h2>
-        <p>
-            Discover the structure of The Luxury Perfumes website.
-            Select any page below to explore our fragrance collection,
-            learn about our brand, or contact our team.
-        </p>
-    </section>
-
-    <main>
-        <section aria-labelledby="home-title">
-            <a class="home-card" href="index.html"
-               style="display:block; color:inherit; text-decoration:none;">
-                <div class="symbol" aria-hidden="true">♛</div>
-                <h3 id="home-title">Home Page</h3>
-                <p>index.html</p>
-                <p>Welcome to The Luxury Perfumes.</p>
-            </a>
-        </section>
-
-        <div class="connector" aria-hidden="true"></div>
-
-        <section aria-labelledby="pages-title">
-            <h2 class="section-title" id="pages-title">
-                Main Website Pages
-            </h2>
-
-            <div class="page-grid">
-
-                <a class="page-card" href="products.html">
-                    <span class="symbol" aria-hidden="true">✧</span>
-                    <h3>Our Products</h3>
-                    <span class="filename">products.html</span>
-                    <p>
-                        Browse perfumes, search products, filter
-                        fragrances and add items to the cart.
-                    </p>
-                </a>
-
-                <a class="page-card" href="about.html">
-                    <span class="symbol" aria-hidden="true">❖</span>
-                    <h3>About Us</h3>
-                    <span class="filename">about.html</span>
-                    <p>
-                        Discover our brand story, values, mission
-                        and passion for luxury fragrances.
-                    </p>
-                </a>
-
-                <a class="page-card" href="enquiries.html">
-                    <span class="symbol" aria-hidden="true">✉</span>
-                    <h3>Enquiries</h3>
-                    <span class="filename">enquiries.html</span>
-                    <p>
-                        Submit questions about products, availability
-                        and customer services.
-                    </p>
-                </a>
-
-                <a class="page-card" href="contacts.html">
-                    <span class="symbol" aria-hidden="true">☎</span>
-                    <h3>Contact Us</h3>
-                    <span class="filename">contacts.html</span>
-                    <p>
-                        Find our contact information and ways to
-                        communicate with our team.
-                    </p>
-                </a>
-
-                <a class="page-card" href="login.html">
-                    <span class="symbol" aria-hidden="true">♙</span>
-                    <h3>Customer Login</h3>
-                    <span class="filename">login.html</span>
-                    <p>
-                        Allow registered customers to sign in
-                        to their accounts.
-                    </p>
-                </a>
-
-                <a class="page-card" href="signup.html">
-                    <span class="symbol" aria-hidden="true">♧</span>
-                    <h3>Create Account</h3>
-                    <span class="filename">signup.html</span>
-                    <p>
-                        Register a new customer account using
-                        the website sign-up form.
-                    </p>
-                </a>
-
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Site structure</span>
+                <h1>Website <em>sitemap</em></h1>
+                <p>Every page of The Luxury Perfumes, in one place.</p>
             </div>
         </section>
 
-        <section class="support-section" aria-labelledby="support-title">
-            <h2 id="support-title">Supporting Website Files</h2>
-
-            <div class="support-list">
-                <div class="support-item">
-                    <h3>CSS Folder</h3>
-                    <p>
-                        CSS/style.css — controls the website's colours,
-                        layouts, typography and responsive design.
-                    </p>
+        <section class="section-tight">
+            <div class="container">
+                <div class="section-head left reveal">
+                    <span class="kicker">Pages</span>
+                    <h2 class="section-title">Explore the <em>site</em></h2>
                 </div>
 
-                <div class="support-item">
-                    <h3>JavaScript Folder</h3>
-                    <p>
-                        js_assets/main.js and js_assets/forms.js — support website
-                        interactions and form functionality.
-                    </p>
-                </div>
+                <div class="tile-grid">
+                    <a class="tile reveal" href="index.html">
+                        <span class="tile-symbol" aria-hidden="true">♛</span>
+                        <h3>Home</h3>
+                        <span class="filename">index.html</span>
+                        <p>The house, the featured maisons and signature selections.</p>
+                    </a>
 
-                <div class="support-item">
-                    <h3>Image Folder</h3>
-                    <p>
-                        images/ — stores the website logo and
-                        perfume product photographs.
-                    </p>
+                    <a class="tile reveal" href="products.html">
+                        <span class="tile-symbol" aria-hidden="true">✧</span>
+                        <h3>The Collection</h3>
+                        <span class="filename">products.html</span>
+                        <p>Browse, search and filter ten fragrances; build a shopping bag.</p>
+                    </a>
+
+                    <a class="tile reveal" href="about.html">
+                        <span class="tile-symbol" aria-hidden="true">❖</span>
+                        <h3>About Us</h3>
+                        <span class="filename">about.html</span>
+                        <p>The story, the standard and the three layers of fragrance.</p>
+                    </a>
+
+                    <a class="tile reveal" href="enquiries.html">
+                        <span class="tile-symbol" aria-hidden="true">✉</span>
+                        <h3>Enquiries</h3>
+                        <span class="filename">enquiries.html</span>
+                        <p>Sourcing, bespoke consultations and corporate gifting.</p>
+                    </a>
+
+                    <a class="tile reveal" href="contacts.html">
+                        <span class="tile-symbol" aria-hidden="true">☎</span>
+                        <h3>Boutiques</h3>
+                        <span class="filename">contacts.html</span>
+                        <p>Johannesburg, Cape Town and Pretoria addresses with a map.</p>
+                    </a>
+
+                    <a class="tile reveal" href="login.html">
+                        <span class="tile-symbol" aria-hidden="true">♙</span>
+                        <h3>Client Login</h3>
+                        <span class="filename">login.html</span>
+                        <p>Sign in to a registered demonstration account.</p>
+                    </a>
+
+                    <a class="tile reveal" href="signup.html">
+                        <span class="tile-symbol" aria-hidden="true">♧</span>
+                        <h3>Create Account</h3>
+                        <span class="filename">signup.html</span>
+                        <p>Join the private list with the registration form.</p>
+                    </a>
                 </div>
             </div>
         </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head left reveal">
+                    <span class="kicker">Supporting files</span>
+                    <h2 class="section-title">Under the <em>bonnet</em></h2>
+                </div>
+
+                <div class="note-grid">
+                    <article class="note-card reveal">
+                        <span class="num">CSS</span>
+                        <h3>CSS/style.css</h3>
+                        <p>The design system: colour tokens, typography, layout, components and responsive rules.</p>
+                    </article>
+
+                    <article class="note-card reveal">
+                        <span class="num">JS</span>
+                        <h3>js_assets/</h3>
+                        <p><code>main.js</code> handles navigation, reveal and filtering; <code>cart.js</code> the bag; <code>forms.js</code> the account forms.</p>
+                    </article>
+
+                    <article class="note-card reveal">
+                        <span class="num">IMG</span>
+                        <h3>images/</h3>
+                        <p>The logo, product photography and the silk and marble textures used behind the heroes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>
-            &copy; 2026 <strong>The Luxury Perfumes</strong>.
-            Elegance in Every Drop.
-        </p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="images/logo.jpg" alt="">
+                        <span class="brand-text">
+                            <span class="brand-name">The Luxury Perfumes</span>
+                            <span class="brand-tag">Haute Parfumerie</span>
+                        </span>
+                    </a>
+                    <p>
+                        A South African house of curated fine fragrance, devoted to
+                        composition, provenance and the pleasure of a signature scent.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="products.html">The collection</a></li>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Client care</h4>
+                    <ul>
+                        <li><a href="contacts.html">Boutiques</a></li>
+                        <li><a href="tel:+27118830199">+27 11 883 0199</a></li>
+                        <li><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></li>
+                        <li><a href="login.html">Client login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> The Luxury Perfumes. All rights reserved.</span>
+                <span>Johannesburg · Cape Town · Pretoria</span>
+            </div>
+        </div>
     </footer>
 
+    <script src="js_assets/main.js"></script>
 </body>
 </html>

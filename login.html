@@ -1,87 +1,157 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login | The Luxury Perfumes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login | The Luxury Perfumes</title>
+    <meta name="description" content="Sign in to your The Luxury Perfumes account for private orders and early access.">
+    <meta name="theme-color" content="#0a0a0b">
 
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-    <a href="login.html" style="background-color: #111; color: #fff; padding: 6px 12px; border-bottom: 2px solid #c5a059;"><b>LOGIN</b></a>
 </head>
-<body bgcolor="white" text="black">
+<body>
 
-    <!-- GLOBAL HEADER & NAVIGATION -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td>
-                <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
-                <IMG SRC="images/logo.jpg" alt="The Luxury Perfumes Logo">
-                <hr width="200%" size="3" color="black" />
-                <p>
-                    <font face="Times New Roman" size="3">
-                        <a href="index.html">HOME</a> &nbsp;|&nbsp;
-                        <a href="products.html">PRODUCTS & SERVICES</a> &nbsp;|&nbsp;
-                        <a href="about.html">ABOUT US</a> &nbsp;|&nbsp;
-                        <a href="enquiries.html">ENQUIRIES</a> &nbsp;|&nbsp;
-                        <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
-                        <a href="signup.html">SIGN UP</a> &nbsp;|&nbsp;
-                        <a href="login.html"><b>LOGIN</b></a>
-                        <a href="sitemap.html">SITEMAP</a>
-                    </font>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announce">
+        Complimentary delivery on orders over R1&nbsp;500 · Johannesburg · Cape Town · Pretoria
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Luxury Perfumes — home">
+                <img class="brand-mark" src="images/logo.jpg" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">The Luxury Perfumes</span>
+                    <span class="brand-tag">Haute Parfumerie</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+            </button>
+
+            <nav class="nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Boutiques</a>
+                <a href="enquiries.html">Enquiries</a>
+                <a href="login.html" aria-current="page">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a class="cart-trigger" href="products.html#lp-cart" data-cart-open>
+                    Bag <span id="lp-cart-count" aria-live="polite">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container auth-wrap">
+            <div class="auth-card reveal">
+                <span class="eyebrow">Client area</span>
+                <h1>Welcome back</h1>
+                <p class="panel-intro">
+                    Sign in to review your orders, saved fragrances and private
+                    invitations from the house.
                 </p>
-                <hr width="85%" size="1" color="black" />
-            </td>
-        </tr>
-    </table>
 
-    <br /><br />
+                <form id="loginForm" novalidate>
+                    <div class="field">
+                        <label for="loginEmail">Email address</label>
+                        <input type="email" id="loginEmail" name="email"
+                               placeholder="you@example.com" autocomplete="email" required>
+                    </div>
 
-    <!-- LOGIN FORM -->
-    <table width="40%" align="center" cellpadding="15" cellspacing="0" border="1">
-        <tr>
-            <td>
-                <h2 align="center"><font face="Times New Roman" size="6">CLIENT LOGIN</font></h2>
-                <p align="center"><font face="Times New Roman" size="3">Access your personal portal and private orders.</font></p>
-                <hr width="80%" size="1" color="black" />
-                <br />
+                    <div class="field">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password"
+                               placeholder="Your password" autocomplete="current-password" required>
+                    </div>
 
-                <!-- ADDED loginForm ID -->
-                <form id="loginForm">
-                    <table width="100%" cellpadding="8" cellspacing="0" border="0">
-                        <tr>
-                            <td><b>Email:</b></td>
-                            <td><input type="email" id="loginEmail" name="email" size="25" required /></td>
-                        </tr>
-                        <tr>
-                            <td><b>Password:</b></td>
-                            <td><input type="password" id="loginPassword" name="password" size="25" required /></td>
-                        </tr>
-                        <tr align="center">
-                            <td colspan="2">
-                                <br />
-                                <input type="submit" value="LOG IN" />
-                            </td>
-                        </tr>
-                    </table>
+                    <button type="submit" class="btn btn-block">Log in</button>
                 </form>
 
-                <p align="center">
-                    <font size="2">Don't have an account? <a href="signup.html">Sign Up Here</a></font>
+                <p class="auth-foot">
+                    New to the house? <a href="signup.html">Create an account</a>
                 </p>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
 
-    <br /><br /><br /><hr width="85%" size="1" color="black" />
+        <section class="section-tight">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <p class="section-sub">
+                        Accounts on this site are demonstration accounts: details are
+                        stored only in your own browser and never transmitted.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- FOOTER -->
-    <table width="100%" cellpadding="10" border="0">
-        <tr align="center">
-            <td><p><font face="Times New Roman" size="2">&copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.</font></p></td>
-        </tr>
-    </table>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="images/logo.jpg" alt="">
+                        <span class="brand-text">
+                            <span class="brand-name">The Luxury Perfumes</span>
+                            <span class="brand-tag">Haute Parfumerie</span>
+                        </span>
+                    </a>
+                    <p>
+                        A South African house of curated fine fragrance, devoted to
+                        composition, provenance and the pleasure of a signature scent.
+                    </p>
+                </div>
 
- <script src="js_assets/forms.js"></script>
- <script src="js_assets/main.js"></script>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="products.html">The collection</a></li>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-col">
+                    <h4>Client care</h4>
+                    <ul>
+                        <li><a href="contacts.html">Boutiques</a></li>
+                        <li><a href="tel:+27118830199">+27 11 883 0199</a></li>
+                        <li><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></li>
+                        <li><a href="login.html">Client login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> The Luxury Perfumes. All rights reserved.</span>
+                <span>Johannesburg · Cape Town · Pretoria</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js_assets/forms.js"></script>
+    <script src="js_assets/main.js"></script>
 </body>
 </html>

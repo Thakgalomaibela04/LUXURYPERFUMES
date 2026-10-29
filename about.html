@@ -1,358 +1,262 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Us | The Luxury Perfumes</title>
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | The Luxury Perfumes</title>
+    <meta name="description" content="The story behind The Luxury Perfumes — a South African house of curated haute parfumerie.">
+    <meta name="theme-color" content="#0a0a0b">
+
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-
-    <style>
-        .about-page {
-            font-family: "Times New Roman", serif;
-            color: #f4eee5;
-            background: #100d0d;
-        }
-
-        .about-hero {
-            text-align: center;
-            padding: 65px 20px 45px;
-            background: linear-gradient(135deg, #100d0d, #35151e, #100d0d);
-            border-bottom: 1px solid #8f7146;
-        }
-
-        .about-eyebrow {
-            color: #c7a66a;
-            letter-spacing: 5px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .about-hero h2 {
-            color: #ead8b3;
-            font-size: clamp(30px, 5vw, 48px);
-            margin: 18px 0;
-            font-weight: normal;
-        }
-
-        .about-hero blockquote {
-            max-width: 650px;
-            margin: 20px auto;
-            color: #f4eee5;
-            font-size: 18px;
-            font-style: italic;
-            line-height: 1.8;
-        }
-
-        .about-hero hr {
-            width: 100px;
-            border: 0;
-            border-top: 2px solid #c7a66a;
-            margin: 25px auto 0;
-        }
-
-        .about-content {
-            width: 82%;
-            max-width: 1050px;
-            margin: 45px auto;
-        }
-
-        .about-card {
-            background: #1a1515;
-            border: 1px solid #765b3b;
-            padding: 35px;
-            margin-bottom: 25px;
-            box-sizing: border-box;
-        }
-
-        .about-card h3 {
-            color: #ead8b3;
-            font-size: 27px;
-            font-weight: normal;
-            margin-top: 0;
-            line-height: 1.4;
-        }
-
-        .about-card p {
-            color: #d9d0c5;
-            font-size: 16px;
-            line-height: 1.9;
-        }
-
-        .about-divider {
-            border: 0;
-            border-top: 1px solid #60482f;
-            margin: 28px 0;
-        }
-
-        .fragrance-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .fragrance-list li {
-            padding: 15px 15px 15px 20px;
-            margin: 12px 0;
-            background: #241b1b;
-            border-left: 3px solid #c7a66a;
-            color: #e5dcd1;
-            line-height: 1.8;
-        }
-
-        .fragrance-list li b {
-            color: #ead8b3;
-        }
-
-        .about-highlight {
-            text-align: center;
-            padding: 35px 20px;
-            border: 1px solid #8f7146;
-            background: #241719;
-            margin-top: 30px;
-        }
-
-        .about-highlight h3 {
-            color: #ead8b3;
-            font-size: 25px;
-            font-weight: normal;
-        }
-
-        .about-highlight p {
-            color: #d9d0c5;
-            line-height: 1.8;
-        }
-
-        .about-button {
-            display: inline-block;
-            padding: 13px 25px;
-            margin-top: 12px;
-            background: #c7a66a;
-            color: #100d0d;
-            text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 1px;
-            border: 1px solid #ead8b3;
-        }
-
-        .about-button:hover {
-            background: #ead8b3;
-        }
-
-        .about-footer {
-            color: #e5dcd1;
-            text-align: center;
-            padding: 18px;
-        }
-
-        @media (max-width: 650px) {
-            .about-content {
-                width: 92%;
-                margin: 25px auto;
-            }
-
-            .about-card {
-                padding: 22px 18px;
-            }
-
-            .about-card h3 {
-                font-size: 23px;
-            }
-
-            .about-card p,
-            .fragrance-list li {
-                font-size: 15px;
-            }
-
-            .about-hero {
-                padding: 45px 16px 35px;
-            }
-        }
-    </style>
-
-    <link rel="stylesheet" href="CSS/style.css">
-
 </head>
+<body>
 
-<body class="about-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- GLOBAL HEADER & NAVIGATION -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td>
-                <h1>
-                    <font face="Times New Roman" size="7">
-                        <b>T H E  L U X U R Y  P E R F U M E S</b>
-                    </font>
-                </h1>
+    <div class="announce">
+        Complimentary delivery on orders over R1&nbsp;500 · Johannesburg · Cape Town · Pretoria
+    </div>
 
-                <img src="images/logo.jpg" alt="The Luxury Perfumes Logo">
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Luxury Perfumes — home">
+                <img class="brand-mark" src="images/logo.jpg" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">The Luxury Perfumes</span>
+                    <span class="brand-tag">Haute Parfumerie</span>
+                </span>
+            </a>
 
-                <hr width="85%" size="1" color="#c7a66a" />
+            <button class="nav-toggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+            </button>
 
+            <nav class="nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Collection</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="contacts.html">Boutiques</a>
+                <a href="enquiries.html">Enquiries</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a class="cart-trigger" href="products.html#lp-cart" data-cart-open>
+                    Bag <span id="lp-cart-count" aria-live="polite">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Our world of fragrance</span>
+                <h1>The architecture <em>of scent</em></h1>
                 <p>
-                    <font face="Times New Roman" size="3">
-                        <a href="index.html">HOME</a> &nbsp;|&nbsp;
-                        <a href="products.html">PRODUCTS & SERVICES</a> &nbsp;|&nbsp;
-                        <a href="about.html"><b>ABOUT US</b></a> &nbsp;|&nbsp;
-                        <a href="enquiries.html">ENQUIRIES</a> &nbsp;|&nbsp;
-                        <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
-                        <a href="signup.html">SIGN UP</a> &nbsp;|&nbsp;
-                        <a href="login.html">LOGIN</a> &nbsp;|&nbsp;
-                        <a href="sitemap.html">SITEMAP</a>
-                    </font>
+                    A house built on one belief: a fragrance should be worn like a
+                    signature, chosen deliberately and remembered long after.
                 </p>
-
-                <hr width="85%" size="1" color="#c7a66a" />
-            </td>
-        </tr>
-    </table>
-
-    <!-- HERO SECTION -->
-    <section class="about-hero">
-        <p class="about-eyebrow">OUR WORLD OF FRAGRANCE</p>
-
-        <h2>THE ARCHITECTURE OF SCENT</h2>
-
-        <blockquote>
-            "Perfume is the unseen, unforgettable, ultimate accessory of fashion."
-        </blockquote>
-
-        <hr>
-    </section>
-
-    <!-- ABOUT CONTENT -->
-    <main class="about-content">
-
-        <!-- ART OF OLFACTION -->
-        <section class="about-card">
-            <h3>01. THE ART OF HAUTE PARFUMERIE</h3>
-
-            <p>
-                At <b>The Luxury Perfumes</b>, we view every fragrance bottle
-                as a masterpiece of liquid art. Perfumery is an intricate
-                harmony of chemistry and emotion, where rare botanical oils,
-                hand-harvested petals, and precious woods are blended into
-                olfactory compositions that transform as they touch the skin.
-            </p>
-
-            <p>
-                Our collection celebrates the legendary craftsmanship of
-                iconic fashion houses—including <i>Chanel, Dior, Valentino,
-                Versace, and Dolce &amp; Gabbana</i>—offering scents crafted
-                by the world's most revered master perfumers (the "Noses").
-            </p>
+            </div>
         </section>
 
-        <!-- ANATOMY OF A FRAGRANCE -->
-        <section class="about-card">
-            <h3>02. THE THREE LAYERS OF FRAGRANCE</h3>
-
-            <p>
-                Understanding a luxury scent requires listening to its
-                evolution over time. Every fine perfume reveals itself
-                through three distinct layers:
-            </p>
-
-            <ul class="fragrance-list">
-                <li>
-                    <b>Top Notes — The First Impression</b><br>
-                    Bright, volatile notes like Calabrian Bergamot,
-                    Sicilian Lemon, and spices that greet you immediately
-                    upon application.
-                </li>
-
-                <li>
-                    <b>Heart / Middle Notes — The Personality</b><br>
-                    Lush florals and rich aromatics such as Grasse Rose,
-                    Jasmine Sambac, and Iris that define the character
-                    of the fragrance.
-                </li>
-
-                <li>
-                    <b>Base Notes — The Lingering Memory</b><br>
-                    Deep, persistent accords of Bourbon Vanilla, Amber,
-                    Sandalwood, and Oud that provide depth and a lasting
-                    impression.
-                </li>
-            </ul>
+        <!-- STORY -->
+        <section class="section">
+            <div class="container feature">
+                <div class="feature-media reveal">
+                    <img src="images/texture-marble.jpg" alt="Black marble surface with gold veining" loading="lazy">
+                </div>
+                <div class="feature-body reveal">
+                    <span class="eyebrow">01 · The house</span>
+                    <h2 class="section-title">Liquid <em>artistry</em></h2>
+                    <p>
+                        At The Luxury Perfumes we treat every bottle as a study in
+                        composition. Perfumery is chemistry in service of emotion —
+                        rare botanical oils, hand-harvested petals and precious woods
+                        blended into accords that evolve as they meet the skin.
+                    </p>
+                    <p>
+                        Our shelves celebrate the craftsmanship of the great couture
+                        houses: Chanel, Dior, Valentino, Versace and Dolce &amp; Gabbana —
+                        chosen bottle by bottle, never by the case.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Curated, not stocked</strong>
+                            A short list of compositions we can stand behind.
+                        </li>
+                        <li>
+                            <strong>Authorised channels</strong>
+                            Every unit traceable to an approved distributor.
+                        </li>
+                    </ul>
+                    <a class="link-underline" href="products.html">View the collection</a>
+                </div>
+            </div>
         </section>
 
-        <!-- PRESERVATION AND AUTHENTICITY -->
-        <section class="about-card">
-            <h3>03. CLIMATE PRESERVATION &amp; BOTTLING INTEGRITY</h3>
-
-            <p>
-                Fragrance oils are delicate compounds sensitive to light,
-                heat, and air. Proper storage helps preserve a perfume's
-                intended character. Keeping fragrances away from direct
-                sunlight, excessive heat, and major temperature changes
-                can help protect their quality over time.
-            </p>
-
-            <p>
-                We believe that caring for a fragrance is an essential
-                part of appreciating the artistry behind every bottle.
-            </p>
+        <!-- QUOTE -->
+        <section class="quote-panel">
+            <blockquote>
+                Scent is the most intimate form of luxury — it arrives before you do.
+            </blockquote>
+            <cite>The Luxury Perfumes</cite>
         </section>
 
-        <!-- WEBSITE EXPERIENCE -->
-        <section class="about-card">
-            <h3>04. YOUR PERSONAL DIGITAL BOUTIQUE</h3>
+        <!-- THE THREE LAYERS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title">The three layers <em>of fragrance</em></h2>
+                    <p class="section-sub">
+                        A fine perfume reveals itself in movement. Understanding the
+                        three layers is the beginning of choosing well.
+                    </p>
+                </div>
 
-            <p>
-                This website is designed as a minimalist, monochrome
-                sanctuary where you can navigate fragrance collections,
-                explore scent profiles, make enquiries about special
-                orders, and register for updates on new releases.
-            </p>
-
-            <p>
-                Whether you are discovering a new signature scent or
-                searching for a memorable gift, we invite you to explore
-                the world of fine fragrance.
-            </p>
+                <ul class="layer-list reveal">
+                    <li>
+                        <h4>Top notes — the first impression</h4>
+                        <p>
+                            Bright, volatile accords such as Calabrian bergamot,
+                            Sicilian lemon and spice that greet the skin in the
+                            opening minutes.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Heart notes — the personality</h4>
+                        <p>
+                            Lush florals and aromatics — Grasse rose, jasmine sambac,
+                            iris — that define the character of the composition.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Base notes — the lingering memory</h4>
+                        <p>
+                            Deep, persistent materials: bourbon vanilla, amber,
+                            sandalwood and oud, giving depth and the trail that stays.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <!-- CALL TO ACTION -->
-        <section class="about-highlight">
-            <h3>DISCOVER YOUR SIGNATURE SCENT</h3>
+        <!-- PRINCIPLES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title">How we <em>work</em></h2>
+                </div>
 
-            <p>
-                Explore our perfume collection or contact us for assistance
-                choosing a fragrance.
-            </p>
+                <div class="note-grid">
+                    <article class="note-card reveal">
+                        <span class="num">02</span>
+                        <h3>Integrity &amp; care</h3>
+                        <p>
+                            Fragrance oils are sensitive to light, heat and air. We
+                            store stock in temperature-controlled conditions and advise
+                            every client on keeping a bottle at its best.
+                        </p>
+                    </article>
 
-            <a href="products.html" class="about-button">
-                EXPLORE OUR COLLECTION
-            </a>
+                    <article class="note-card reveal">
+                        <span class="num">03</span>
+                        <h3>Guidance, not pressure</h3>
+                        <p>
+                            Our consultants are trained across the fragrance families.
+                            The goal is the right bottle for you — not the largest sale.
+                        </p>
+                    </article>
 
-            <br>
+                    <article class="note-card reveal">
+                        <span class="num">04</span>
+                        <h3>A digital boutique</h3>
+                        <p>
+                            This site mirrors our boutiques: browse the collection,
+                            search by house, build a bag and reach the concierge for
+                            anything bespoke.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            <a href="enquiries.html" class="about-button">
-                MAKE AN ENQUIRY
-            </a>
+        <section class="vip-band">
+            <div class="container vip-inner">
+                <div>
+                    <h2>Discover your signature</h2>
+                    <p>Book a private consultation with our fragrance team.</p>
+                </div>
+                <div class="hero-actions">
+                    <a class="btn" href="enquiries.html">Make an enquiry</a>
+                    <a class="btn btn-ghost" href="contacts.html">Visit a boutique</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <hr width="85%" size="1" color="#c7a66a" />
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="images/logo.jpg" alt="">
+                        <span class="brand-text">
+                            <span class="brand-name">The Luxury Perfumes</span>
+                            <span class="brand-tag">Haute Parfumerie</span>
+                        </span>
+                    </a>
+                    <p>
+                        A South African house of curated fine fragrance, devoted to
+                        composition, provenance and the pleasure of a signature scent.
+                    </p>
+                </div>
 
-    <!-- FOOTER -->
-    <table width="100%" cellpadding="10" border="0">
-        <tr align="center">
-            <td class="about-footer">
-                <p>
-                    <font face="Times New Roman" size="2">
-                        &copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.
-                    </font>
-                </p>
-            </td>
-        </tr>
-    </table>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="products.html">The collection</a></li>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
 
-    <!-- JAVASCRIPT LINKS -->
-    <script src="js_assets/forms.js"></script>
+                <div class="footer-col">
+                    <h4>Client care</h4>
+                    <ul>
+                        <li><a href="contacts.html">Boutiques</a></li>
+                        <li><a href="tel:+27118830199">+27 11 883 0199</a></li>
+                        <li><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></li>
+                        <li><a href="login.html">Client login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> The Luxury Perfumes. All rights reserved.</span>
+                <span>Johannesburg · Cape Town · Pretoria</span>
+            </div>
+        </div>
+    </footer>
+
     <script src="js_assets/main.js"></script>
-
 </body>
 </html>
