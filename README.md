@@ -39,7 +39,7 @@ This repository contains a multi-page static website built with semantic HTML5 a
 LUXURYPERFUMES/
 ├── CSS/
 │   └── style.css          # Single external stylesheet
-├── _image/                # Product & logo images
+├── images/                # Product & logo images
 ├── index.html
 ├── products.html
 ├── about.html
