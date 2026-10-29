@@ -1,23 +1,35 @@
 # THE LUXURY PERFUMES
 
-**Part 2:** Designing the Visuals – CSS Styling and Responsive Design  
+**Part 3:** Professional redesign — visual identity, interaction and responsive polish
 
-A minimalist monochrome website for a luxury fragrance maison featuring curated collections from Chanel, Dior, Valentino, Versace and Dolce & Gabbana.
+A black-and-gold haute parfumerie website for a South African fragrance house featuring
+curated collections from Chanel, Dior, Valentino, Versace and Dolce & Gabbana.
+
+Live site: <https://thakgalomaibela04.github.io/LUXURYPERFUMES/>
 
 ---
 
-## Project Overview
+## Visual Identity
 
-This repository contains a multi-page static website built with semantic HTML5 and a single external CSS stylesheet. The site demonstrates:
+The site now uses one deliberate palette instead of mixed themes. Every colour is a token
+declared once in `CSS/style.css` under `:root`, so the whole site can be re-toned from one place.
 
-- External CSS linked to every page
-- CSS reset + consistent base styles (font family, colour scheme, spacing)
-- Harmonious typography scale using relative units (`rem` / `em`)
-- Modern layout techniques (CSS Flexbox and CSS Grid)
-- Visual styling (colour, borders, box-shadow, hover / focus / active states)
-- Fully responsive design with media queries and breakpoints
-- Responsive images (`max-width: 100%`, proper `alt` attributes)
-- Clean navigation that adapts from horizontal (desktop) to stacked (mobile)
+| Token | Value | Use |
+|-------|-------|-----|
+| `--ink` | `#0a0a0b` | Page background |
+| `--panel` | `#16161a` | Cards, panels, drawers |
+| `--gold` | `#c6a15b` | Primary accent, rules, links, buttons |
+| `--gold-soft` | `#e2c795` | Hover states, italic accents |
+| `--ivory` | `#f7f3ea` | Headings on dark |
+| `--text` | `#ece6db` | Body copy |
+| `--muted` | `#a79e92` | Secondary copy |
+
+**Typography:** Cormorant Garamond (display serif) paired with Jost (sans) for UI text —
+a classic luxury pairing of high-contrast serif headlines with a geometric, quiet sans.
+
+**Photography:** product shots sit on a warm ivory studio gradient (`mix-blend-mode: multiply`),
+so bottles read cleanly against dark cards. Two new textures (black silk, gold-veined marble)
+carry the hero and quote panels.
 
 ---
 
@@ -25,21 +37,28 @@ This repository contains a multi-page static website built with semantic HTML5 a
 
 | Page | File | Description |
 |------|------|-------------|
-| Home | `index.html` | Hero section + featured fragrance houses |
-| Products & Services | `products.html` | Product catalogue table + exclusive services |
-| About Us | `about.html` | Brand story, fragrance pyramid & boutique philosophy |
-| Enquiries | `enquiries.html` | Client enquiry form |
-| Contacts | `contacts.html` | Flagship store locations + contact directory |
-| Sign Up | `signup.html` | VIP registration form |
-| Login | `login.html` | Client login form |
+| Home | `index.html` | Silk hero, maisons strip, featured houses, signature selections, services, press quote, VIP band |
+| The Collection | `products.html` | 10 fragrances, live search, category filter, price/name sort, sliding shopping bag |
+| About Us | `about.html` | House story, the three layers of fragrance, working principles |
+| Boutiques | `contacts.html` | Johannesburg, Cape Town and Pretoria cards, embedded map, concierge directory |
+| Enquiries | `enquiries.html` | Validated enquiry form (sourcing, bespoke, gifting) |
+| Client Login | `login.html` | Demonstration login |
+| Create Account | `signup.html` | Demonstration registration |
+| Sitemap | `sitemap.html` | Every page and supporting file |
 
 ---
 
 ## Folder Structure
+
+```
 LUXURYPERFUMES/
 ├── CSS/
-│   └── style.css          # Single external stylesheet
-├── images/                # Product & logo images
+│   └── style.css          # Single design-system stylesheet
+├── images/                # Logo, product photography, silk & marble textures
+├── js_assets/
+│   ├── main.js            # Navigation, scroll reveal, filtering, cart drawer
+│   ├── cart.js            # Shopping bag (localStorage)
+│   └── forms.js           # Registration & login
 ├── index.html
 ├── products.html
 ├── about.html
@@ -47,81 +66,89 @@ LUXURYPERFUMES/
 ├── contacts.html
 ├── signup.html
 ├── login.html
-├── README.md              # This file (includes Changelog & References)
+├── sitemap.html
+├── README.md
 └── .gitattributes
-
+```
 
 ---
 
-## How to View / Test the Website
+## Interaction
+
+- **Sticky, blur-backed header** that condenses on scroll.
+- **Mobile navigation** with accessible toggle (`aria-expanded`, Escape to close).
+- **Scroll reveal** on cards and sections via `IntersectionObserver` (respects `prefers-reduced-motion`).
+- **Catalogue:** instant search, Women/Men filtering, sort by price or name, live result count and empty state.
+- **Shopping bag:** slide-out drawer, quantity controls, subtotal, persisted in `localStorage`, badge count on every page.
+- **Forms:** inline validation with accessible status messages (`role="status"`, `aria-live`).
+
+---
+
+## How to View / Test
 
 1. Clone or download this repository.
-2. Open any `.html` file in a modern browser (Chrome, Firefox, Edge, Safari).
-3. Use browser Developer Tools (F12) → Toggle device toolbar to test responsive breakpoints:
-   - Desktop: ≥ 1025 px
-   - Tablet: 769 px – 1024 px
-   - Mobile: ≤ 768 px
-   - Small mobile: ≤ 480 px
-4. Resize the browser window or use device emulation to verify layout, typography, navigation and image behaviour.
+2. Open `index.html` in a modern browser, or serve the folder:
+   `python3 -m http.server 8000`
+3. In DevTools → Toggle device toolbar, test the breakpoints:
+   - Desktop ≥ 1181 px (full horizontal navigation)
+   - ≤ 1180 px (navigation collapses to a menu button)
+   - ≤ 1024 px (single-column feature and form layouts)
+   - ≤ 620 px (single-column cards, full-width buttons)
+   - ≤ 430 px
 
 ---
 
 ## Technologies Used
 
-- HTML5 (semantic elements: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- CSS3
-  - External stylesheet
-  - CSS Reset
-  - Custom properties (`:root` variables)
-  - Flexbox & CSS Grid
-  - Media queries
-  - Relative units (`rem`, `em`, `%`)
-  - Pseudo-classes (`:hover`, `:focus`, `:active`)
-  - Transitions & box-shadow
+- **HTML5** — semantic elements: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`
+- **CSS3** — custom properties, Flexbox, Grid, `clamp()` fluid type, `aspect-ratio`, media queries,
+  pseudo-elements, transitions, `backdrop-filter`, `mix-blend-mode`, reduced-motion support
+- **JavaScript (ES5-safe)** — `IntersectionObserver`, `localStorage`, `CustomEvent`, `Intl.NumberFormat`
+- **Google Fonts** — Cormorant Garamond, Jost (with local fallbacks)
+- **GitHub Pages** — deployed via the Jekyll Pages workflow
 
 ---
 
 ## Changelog
 
-All edits made after Part 1 feedback are recorded below so the lecturer can clearly see the improvements.
+### [Part 3 – Professional redesign] – October 2026
+
+**Colour scheme fixed**
+- Removed the conflicting `!important` overrides (dark theme + light theme + products-page theme all
+  fighting for control of `body`, headings and links), which produced unpredictable colours per page.
+- Introduced a single token palette (black, gold, ivory) documented above and applied consistently.
+
+**Design**
+- New display typography (Cormorant Garamond + Jost) replacing Times New Roman/Arial.
+- Full-bleed silk hero, gold-veined marble quote panel, gold hairline rules and 0-radius detailing.
+- Unified header with announcement bar, monogram lock-up and active-page state; shared four-column footer.
+- Product photography normalised onto an ivory studio gradient for a consistent catalogue look.
+
+**Content accuracy**
+- Each product is now matched to the bottle actually photographed
+  (Coco Mademoiselle Intense, Coco EDP, J'adore, Fahrenheit Parfum, Born In Roma Uomo / Uomo Intense,
+  Bright Crystal, Crystal Noir, Pour Femme Intense, Light Blue Pour Homme).
+- Removed duplicate products and duplicate cart IDs that merged separate bottles into one bag line.
+
+**Functionality**
+- Product filters and search now work (previously styled but not wired up).
+- Shopping bag became a slide-out drawer with a live badge count across pages.
+- Added sorting, result counts, empty states, deep links to products, and form validation messages.
+
+**Images**
+- `_image/` renamed to `images/` — Jekyll (GitHub Pages) ignores underscore-prefixed folders,
+  which was why no images loaded on the live site.
 
 ### [Part 2 – CSS & Responsive Design] – September 2026
 
-#### Feedback Implementation (Part 1 corrections)
-
-- **Navigation consistency:** Standardised the navigation bar across all pages (previously some pages used different spacing or bolding). Added a clear `.active` class so the current page is visually highlighted.
-- **Image accessibility:** Added meaningful `alt` attributes to every product image and the logo for better accessibility and SEO.
-- **Removed obsolete presentational markup:** Eliminated most `<font>`, `bgcolor`, `align`, and fixed-width table attributes. Styling is now controlled exclusively by the external CSS file (true cascading).
-- **Semantic structure:** Replaced pure table-based layout with semantic HTML5 elements + CSS Grid / Flexbox while preserving the original content and luxury monochrome aesthetic.
-- **Form improvements:** Added proper `<label>` elements linked to inputs (`for` / `id`), `required` attributes, and better keyboard focus styles.
-- **Meta viewport:** Added `<meta name="viewport">` on every page so mobile browsers render the site correctly.
-
-#### CSS Styling for Desktop (new)
-
-- Created external stylesheet `CSS/style.css` and linked it on every page.
-- Implemented a full CSS reset for consistent cross-browser rendering.
-- Established a coherent base style: black-and-white colour scheme, Times New Roman serif typeface, consistent margin/padding scale.
-- Built a clear typography scale (h1 → body) using relative units.
-- Applied Flexbox for the main navigation and button groups.
-- Applied CSS Grid for the featured houses section, location cards and communications grid.
-- Added visual polish: subtle box-shadows, hover lift effects on cards, focus outlines for accessibility, and smooth transitions.
-- Used the cascade effectively – most elements inherit from base rules, reducing the number of selectors needed.
-
-#### Responsive Design (new)
-
-- Defined three key breakpoints:
-  - Tablet (max-width: 1024px) <img width="1060" height="933" alt="Screenshot 2026-09-16 144838" src="https://github.com/user-attachments/assets/ef8a1098-fd3f-48db-ae61-2fc91a7e8e1a" />
-
-
-  - Mobile (max-width: 768px) <img width="820" height="954" alt="Screenshot 2026-09-16 144822" src="https://github.com/user-attachments/assets/6d1e7014-68b5-40c5-8026-1793ed907b9c" />
-
-  - Small mobile (max-width: 480px)
-- Converted multi-column layouts to single-column on smaller screens.
-- Navigation changes from horizontal flex to vertical stacked menu on mobile.
-- Product table becomes horizontally scrollable on small screens so data remains usable.
-- All font sizes and spacing use relative units (`rem` / `%`) so they scale smoothly.
-- Images are fully responsive (`max-width: 100%; height: auto`).
-- Tested with browser developer tools across desktop, tablet and mobile viewports.
+- Navigation standardised across pages; current page highlighted.
+- Meaningful `alt` text on every product image and the logo.
+- Removed obsolete presentational markup (`<font>`, `bgcolor`, `align`, fixed-width tables).
+- Semantic HTML5 + CSS Grid/Flexbox layout replacing table layout.
+- Proper `<label>`/`required` form fields and focus styles.
+- `<meta name="viewport">` on every page.
+- External stylesheet, CSS reset, typographic scale, box-shadow and hover states.
+- Three responsive breakpoints; multi-column to single-column collapse; responsive images.
 
 ---
 
@@ -137,7 +164,10 @@ Mozilla Developer Network (MDN). 2025. *CSS Flexible Box Layout*. Available at: 
 
 Mozilla Developer Network (MDN). 2025. *CSS Grid Layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout (Accessed: 11 September 2026).
 
+Mozilla Developer Network (MDN). 2025. *Intersection Observer API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API (Accessed: 20 October 2026).
+
 W3C. 2024. *HTML Living Standard*. Available at: https://html.spec.whatwg.org/ (Accessed: 8 September 2026).
 
 Google. 2025. *Responsive web design basics*. Available at: https://web.dev/responsive-web-design-basics/ (Accessed: 13 September 2026).
 
+Google Fonts. 2026. *Cormorant Garamond & Jost*. Available at: https://fonts.google.com/ (Accessed: 20 October 2026).

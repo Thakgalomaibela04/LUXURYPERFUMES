@@ -1,410 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiries | The Luxury Perfumes</title>
+    <meta name="description" content="Contact The Luxury Perfumes concierge for rare bottle sourcing, bespoke consultations and corporate gifting.">
+    <meta name="theme-color" content="#0a0a0b">
 
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
 
-    <style>
-        .enquiry-section {
-            width: 85%;
-            max-width: 850px;
-            margin: 35px auto;
-            background: #100d0d;
-            color: #f4eee5;
-            border: 1px solid #c7a66a;
-            padding: 30px;
-            box-sizing: border-box;
-            font-family: "Times New Roman", serif;
-        }
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        .enquiry-section h2 {
-            color: #ead8b3;
-            font-size: 34px;
-            text-align: center;
-        }
+    <div class="announce">
+        Complimentary delivery on orders over R1&nbsp;500 · Johannesburg · Cape Town · Pretoria
+    </div>
 
-        .enquiry-intro {
-            color: #d5cbc0;
-            text-align: center;
-            line-height: 1.7;
-        }
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Luxury Perfumes — home">
+                <img class="brand-mark" src="images/logo.jpg" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">The Luxury Perfumes</span>
+                    <span class="brand-tag">Haute Parfumerie</span>
+                </span>
+            </a>
 
-        .enquiry-section hr {
-            border: 0;
-            border-top: 1px solid #8f7146;
-            margin: 22px auto;
-        }
+            <button class="nav-toggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+            </button>
 
-        .enquiry-table {
-            width: 100%;
-        }
+            <nav class="nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Boutiques</a>
+                <a href="enquiries.html" aria-current="page">Enquiries</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a class="cart-trigger" href="products.html#lp-cart" data-cart-open>
+                    Bag <span id="lp-cart-count" aria-live="polite">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-        .enquiry-table td {
-            padding: 12px 8px;
-            vertical-align: top;
-        }
+    <main id="main">
 
-        .enquiry-table td:first-child {
-            width: 30%;
-            color: #ead8b3;
-        }
-
-        .enquiry-table input[type="text"],
-        .enquiry-table input[type="email"],
-        .enquiry-table select,
-        .enquiry-table textarea {
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
-            padding: 12px;
-            border: 1px solid #8f7146;
-            border-radius: 3px;
-            background: #f8f4ed;
-            color: #100d0d;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-
-        .enquiry-table textarea {
-            resize: vertical;
-        }
-
-        .brand-options {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px 18px;
-            line-height: 1.8;
-        }
-
-        .brand-options label {
-            color: #f4eee5;
-            cursor: pointer;
-        }
-
-        .brand-options input {
-            accent-color: #c7a66a;
-        }
-
-        .enquiry-buttons {
-            text-align: center;
-            padding-top: 18px;
-        }
-
-        .enquiry-buttons button {
-            padding: 13px 22px;
-            margin: 5px;
-            border: 1px solid #c7a66a;
-            cursor: pointer;
-            font-weight: bold;
-            font-family: "Times New Roman", serif;
-            letter-spacing: 1px;
-        }
-
-        .submit-enquiry {
-            background: #c7a66a;
-            color: #100d0d;
-        }
-
-        .submit-enquiry:hover {
-            background: #ead8b3;
-        }
-
-        .reset-enquiry {
-            background: transparent;
-            color: #ead8b3;
-        }
-
-        .reset-enquiry:hover {
-            background: #35151e;
-        }
-
-        .form-message {
-            display: none;
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #c7a66a;
-            color: #ead8b3;
-            line-height: 1.6;
-            overflow-wrap: anywhere;
-        }
-
-        .form-message.error {
-            border-color: #e4a09a;
-            color: #ffd6d1;
-        }
-
-        @media (max-width: 600px) {
-            .enquiry-section {
-                width: 94%;
-                padding: 18px 12px;
-            }
-
-            .enquiry-section h2 {
-                font-size: 27px;
-            }
-
-            .enquiry-table,
-            .enquiry-table tbody,
-            .enquiry-table tr,
-            .enquiry-table td {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            .enquiry-table td:first-child {
-                padding-bottom: 3px;
-            }
-
-            .enquiry-table td {
-                padding-top: 7px;
-                padding-bottom: 7px;
-            }
-        }
-    </style>
-
-
-    <!-- GLOBAL HEADER & NAVIGATION -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td>
-                <h1>
-                    <font face="Times New Roman" size="7">
-                        <b>T H E  L U X U R Y  P E R F U M E S</b>
-                    </font>
-                </h1>
-
-                <IMG SRC="images/logo.jpg" alt="The Luxury Perfumes Logo">
-
-                <hr width="85%" size="1" color="black" />
-
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Concierge</span>
+                <h1>Client <em>enquiries</em></h1>
                 <p>
-                    <font face="Times New Roman" size="3">
-                        <a href="index.html">HOME</a> &nbsp;|&nbsp;
-                        <a href="products.html">PRODUCTS & SERVICES</a> &nbsp;|&nbsp;
-                        <a href="about.html">ABOUT US</a> &nbsp;|&nbsp;
-                        <a href="enquiries.html"><b>ENQUIRIES</b></a> &nbsp;|&nbsp;
-                        <a href="contacts.html">CONTACTS</a> &nbsp;|&nbsp;
-                        <a href="signup.html">SIGN UP</a> &nbsp;|&nbsp;
-                        <a href="login.html">LOGIN</a> &nbsp;|&nbsp;
-                        <a href="sitemap.html">SITEMAP</a>
-                    </font>
+                    Rare bottle sourcing, bespoke consultation, corporate gifting or
+                    a simple question — tell us what you need and we will reply within
+                    one business day.
                 </p>
-
-                <hr width="85%" size="1" color="black" />
-            </td>
-        </tr>
-    </table>
-
-    <br />
-
-    <!-- ENQUIRY FORM -->
-    <section class="enquiry-section">
-
-        <h2>CLIENT ENQUIRIES</h2>
-
-        <p class="enquiry-intro">
-            Contact our concierge for special orders, corporate requests,
-            or custom consultations. We look forward to assisting you.
-        </p>
-
-        <hr />
-
-        <form id="enquiryForm">
-            <table class="enquiry-table" cellpadding="8" cellspacing="0" border="0">
-
-                <tr>
-                    <td><label for="fullname"><b>Full Name:</b></label></td>
-                    <td>
-                        <input
-                            type="text"
-                            id="fullname"
-                            name="fullname"
-                            placeholder="Enter your full name"
-                            minlength="2"
-                            maxlength="100"
-                            autocomplete="name"
-                            required>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="email"><b>Email Address:</b></label></td>
-                    <td>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="example@email.com"
-                            maxlength="254"
-                            autocomplete="email"
-                            required>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="subject"><b>Enquiry Subject:</b></label></td>
-                    <td>
-                        <select id="subject" name="subject" required>
-                            <option value="sourcing">Rare Bottle Sourcing</option>
-                            <option value="bespoke">Bespoke Scent Consultation</option>
-                            <option value="gifting">Corporate &amp; Event Gifting</option>
-                            <option value="general">General Information</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><b>Brands of Interest:</b></td>
-                    <td>
-                        <div class="brand-options">
-                            <label>
-                                <input type="checkbox" name="brand" value="Dior">
-                                Dior
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="brand" value="Chanel">
-                                Chanel
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="brand" value="Valentino">
-                                Valentino
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="brand" value="Versace">
-                                Versace
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="brand" value="Dolce & Gabbana">
-                                Dolce &amp; Gabbana
-                            </label>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="message"><b>Message:</b></label>
-                    </td>
-                    <td>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Tell us how we can assist you..."
-                            minlength="10"
-                            maxlength="2000"
-                            required></textarea>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td colspan="2">
-                        <div class="enquiry-buttons">
-                            <button type="submit" class="submit-enquiry">
-                                SUBMIT ENQUIRY
-                            </button>
-
-                            <button type="reset" class="reset-enquiry">
-                                RESET FORM
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-            </table>
-
-            <div
-                id="formMessage"
-                class="form-message"
-                role="status"
-                aria-live="polite">
             </div>
-        </form>
-    </section>
+        </section>
 
-    <br /><br />
+        <section class="section-tight">
+            <div class="container form-layout">
 
-    <hr width="85%" size="1" color="black" />
+                <!-- SIDE INFORMATION -->
+                <aside class="reveal">
+                    <span class="eyebrow">How we can help</span>
+                    <ul class="info-list">
+                        <li>
+                            <h3>Rare bottle sourcing</h3>
+                            <p>Looking for a discontinued or limited composition? We will trace it through our distributor network.</p>
+                        </li>
+                        <li>
+                            <h3>Bespoke consultation</h3>
+                            <p>A guided session through the fragrance families, in boutique or by video call.</p>
+                        </li>
+                        <li>
+                            <h3>Corporate &amp; event gifting</h3>
+                            <p>Volume gifting with engraving and signature presentation.</p>
+                        </li>
+                        <li>
+                            <h3>Direct lines</h3>
+                            <p>
+                                <a href="tel:+27118830199">+27 11 883 0199</a><br>
+                                <a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                </aside>
 
-    <!-- FOOTER -->
-    <table width="100%" cellpadding="10" border="0">
-        <tr align="center">
-            <td>
-                <p>
-                    <font face="Times New Roman" size="2">
-                        &copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.
-                    </font>
-                </p>
-            </td>
-        </tr>
-    </table>
+                <!-- FORM -->
+                <div class="panel reveal">
+                    <h2>Send an enquiry</h2>
+                    <p class="panel-intro">
+                        Fields marked with an asterisk are required. Your details are
+                        used only to answer this enquiry.
+                    </p>
 
-    <!-- JAVASCRIPT LINKS -->
-    <script src="js_assets/forms.js"></script>
+                    <form id="enquiryForm" novalidate>
+                        <div class="field-split">
+                            <div class="field">
+                                <label for="fullname">Full name *</label>
+                                <input type="text" id="fullname" name="fullname"
+                                       placeholder="Your full name"
+                                       minlength="2" maxlength="100"
+                                       autocomplete="name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="email">Email address *</label>
+                                <input type="email" id="email" name="email"
+                                       placeholder="you@example.com"
+                                       maxlength="254" autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="subject">Enquiry subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="sourcing">Rare bottle sourcing</option>
+                                <option value="bespoke">Bespoke scent consultation</option>
+                                <option value="gifting">Corporate &amp; event gifting</option>
+                                <option value="general">General information</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <span class="field-label" id="brands-label">Houses of interest</span>
+                            <div class="checkbox-grid" role="group" aria-labelledby="brands-label">
+                                <label><input type="checkbox" name="brand" value="Dior"> Dior</label>
+                                <label><input type="checkbox" name="brand" value="Chanel"> Chanel</label>
+                                <label><input type="checkbox" name="brand" value="Valentino"> Valentino</label>
+                                <label><input type="checkbox" name="brand" value="Versace"> Versace</label>
+                                <label><input type="checkbox" name="brand" value="Dolce &amp; Gabbana"> Dolce &amp; Gabbana</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6"
+                                      placeholder="Tell us how we can assist you…"
+                                      minlength="10" maxlength="2000" required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Submit enquiry</button>
+                            <button type="reset" class="btn btn-ghost">Reset form</button>
+                        </div>
+
+                        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-panel">
+            <blockquote>
+                Every enquiry is read by a person, not a queue.
+            </blockquote>
+            <cite>Client services</cite>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="images/logo.jpg" alt="">
+                        <span class="brand-text">
+                            <span class="brand-name">The Luxury Perfumes</span>
+                            <span class="brand-tag">Haute Parfumerie</span>
+                        </span>
+                    </a>
+                    <p>
+                        A South African house of curated fine fragrance, devoted to
+                        composition, provenance and the pleasure of a signature scent.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="products.html">The collection</a></li>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Client care</h4>
+                    <ul>
+                        <li><a href="contacts.html">Boutiques</a></li>
+                        <li><a href="tel:+27118830199">+27 11 883 0199</a></li>
+                        <li><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></li>
+                        <li><a href="login.html">Client login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> The Luxury Perfumes. All rights reserved.</span>
+                <span>Johannesburg · Cape Town · Pretoria</span>
+            </div>
+        </div>
+    </footer>
+
     <script src="js_assets/main.js"></script>
-
-    <!-- ENQUIRY FORM VALIDATION -->
     <script>
-        const enquiryForm = document.getElementById("enquiryForm");
-        const formMessage = document.getElementById("formMessage");
+        (function () {
+            "use strict";
 
-        enquiryForm.addEventListener("submit", function (event) {
-            event.preventDefault();
+            var form = document.getElementById("enquiryForm");
+            var box = document.getElementById("formMessage");
+            if (!form || !box) return;
 
-            if (!enquiryForm.checkValidity()) {
-                enquiryForm.reportValidity();
-                return;
+            function show(text, isError) {
+                box.textContent = text;
+                box.className = "form-message is-visible" + (isError ? " error" : "");
             }
 
-            const fullName = document.getElementById("fullname").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const subject = document.getElementById("subject");
-            const message = document.getElementById("message").value.trim();
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
 
-            if (fullName.length < 2 || message.length < 10) {
-                formMessage.className = "form-message error";
-                formMessage.textContent =
-                    "Please enter your full name and a message of at least 10 characters.";
-                formMessage.style.display = "block";
-                return;
-            }
+                var name = document.getElementById("fullname").value.trim();
+                var email = document.getElementById("email").value.trim();
+                var subjectSelect = document.getElementById("subject");
+                var message = document.getElementById("message").value.trim();
 
-            const selectedBrands = Array.from(
-                enquiryForm.querySelectorAll('input[name="brand"]:checked')
-            ).map(function (checkbox) {
-                return checkbox.value;
+                if (!form.checkValidity() || name.length < 2 || message.length < 10) {
+                    form.reportValidity();
+                    show("Please complete every required field, using at least 10 characters in your message.", true);
+                    return;
+                }
+
+                var brands = Array.prototype.map.call(
+                    form.querySelectorAll('input[name="brand"]:checked'),
+                    function (input) { return input.value; }
+                );
+
+                show(
+                    "Thank you, " + name + ". Your enquiry has been validated: " +
+                    subjectSelect.options[subjectSelect.selectedIndex].text +
+                    " · Houses: " + (brands.length ? brands.join(", ") : "none selected") +
+                    ". This is a demonstration form — connect a form service or mail handler to deliver it to " +
+                    "concierge@theluxuryperfumes.com.",
+                    false
+                );
+
+                box.scrollIntoView({ behavior: "smooth", block: "nearest" });
             });
 
-            formMessage.className = "form-message";
-            formMessage.textContent =
-                "Thank you, " + fullName +
-                ". Your form has passed validation. " +
-                "Enquiry type: " + subject.options[subject.selectedIndex].text +
-                ". Selected brands: " +
-                (selectedBrands.length ? selectedBrands.join(", ") : "None selected") +
-                ". Email: " + email +
-                ". Please note: this demonstration does not send your enquiry to the business. " +
-                "A connected server or form service is needed to deliver it.";
-            formMessage.style.display = "block";
-
-            formMessage.scrollIntoView({
-                behavior: "smooth",
-                block: "nearest"
+            form.addEventListener("reset", function () {
+                box.textContent = "";
+                box.className = "form-message";
             });
-        });
-
-        enquiryForm.addEventListener("reset", function () {
-            formMessage.style.display = "none";
-            formMessage.textContent = "";
-            formMessage.className = "form-message";
-        });
+        })();
     </script>
-
 </body>
 </html>

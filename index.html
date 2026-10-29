@@ -1,156 +1,369 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>THE LUXURY PERFUMES | Haute Parfumerie</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Luxury Perfumes | Haute Parfumerie in South Africa</title>
+    <meta name="description" content="The Luxury Perfumes is a South African haute parfumerie curating signature scents from Chanel, Dior, Valentino, Versace and Dolce &amp; Gabbana.">
+    <meta name="theme-color" content="#0a0a0b">
 
-    <meta name="description"
-      content="Curated fragrances crafted for the bold and unique.">
+    <meta property="og:title" content="The Luxury Perfumes | Haute Parfumerie">
+    <meta property="og:description" content="Curated world-class fragrances, personal scent profiling and private boutique consultations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/texture-silk.jpg">
 
-    <!-- Website logo -->
     <link rel="icon" type="image/jpeg" href="images/logo.jpg">
-    <!-- <link rel="canonical" href="https://theluxuryperfume.co.za/"> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-
 </head>
-<body bgcolor="white" text="black">
+<body>
 
-    <!-- GLOBAL HEADER & NAVIGATION -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td class="hero-inner">
-            <td>
-                <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-                <p><font face="Times New Roman" size="3"><i>THE PINNACLE OF MONOCHROME ELEGANCE & SCENT</i></font></p>
+    <div class="announce">
+        Complimentary delivery on orders over R1&nbsp;500 · Johannesburg · Cape Town · Pretoria
+    </div>
 
-                <!-- WEBSITE LOGO -->
-                <img src="images/logo.jpg" alt="The Luxury Perfumes logo" width="180">
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Luxury Perfumes — home">
+                <img class="brand-mark" src="images/logo.jpg" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">The Luxury Perfumes</span>
+                    <span class="brand-tag">Haute Parfumerie</span>
+                </span>
+            </a>
 
-                <hr width="85%" size="1" color="black" />
+            <button class="nav-toggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+            </button>
 
-                <p>
-                    <font face="Times New Roman" size="3">
-                        <a href="index.html"><b>HOME</b></a> 
-                        <a href="products.html">PRODUCTS & SERVICES</a> 
-                        <a href="about.html">ABOUT US</a> 
-                        <a href="enquiries.html">ENQUIRIES</a> 
-                        <a href="contacts.html">CONTACTS</a> 
-                        <a href="signup.html">SIGN UP</a> 
-                        <a href="login.html">LOGIN</a>
-                        <a href="sitemap.html">SITEMAP</a>
-                    </font>
-                </p>
+            <nav class="nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="products.html">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html">Boutiques</a>
+                <a href="enquiries.html">Enquiries</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a class="cart-trigger" href="products.html#lp-cart" data-cart-open>
+                    Bag <span id="lp-cart-count" aria-live="polite">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-                <hr width="85%" size="1" color="black" />
-            </td>
-        </tr>
-    </table>
+    <main id="main">
 
-    <br /><br />
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <span class="eyebrow">Haute Parfumerie · Since 2026</span>
+                    <h1>The art of <em>unforgettable</em> scent</h1>
+                    <p class="hero-sub">
+                        A curated house of world-class fragrance. Rare compositions
+                        from the great couture maisons, presented with the attention
+                        a signature deserves.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn" href="products.html">Explore the collection</a>
+                        <a class="btn btn-ghost" href="enquiries.html">Book a consultation</a>
+                    </div>
+                    <ul class="hero-meta">
+                        <li>Authorised fragrance house</li>
+                        <li>Nationwide delivery</li>
+                        <li>Personal scent profiling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- HERO SECTION -->
-    <table width="80%" align="center" cellpadding="25" cellspacing="0" border="1">
-        <tr align="center">
-            <td>
-                <br />
+        <!-- HOUSE STRIP -->
+        <div class="house-strip">
+            <div class="container">
+                <ul>
+                    <li>Chanel</li>
+                    <li>Dior</li>
+                    <li>Valentino</li>
+                    <li>Versace</li>
+                    <li>Dolce &amp; Gabbana</li>
+                </ul>
+            </div>
+        </div>
 
-                <h2><font face="Times New Roman" size="10">CURATED WORLD-CLASS FRAGRANCES</font></h2>
+        <!-- FEATURED HOUSES -->
+        <section class="section" aria-labelledby="houses-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title" id="houses-title">The <em>maisons</em> we represent</h2>
+                    <p class="section-sub">
+                        Five houses, one standard. Every bottle is selected for the
+                        quality of its composition and the discipline of its craft.
+                    </p>
+                </div>
 
-                <p><font face="Times New Roman" size="4">Welcome to <b>The Luxury Perfumes</b>. We host extraordinary scent collections from iconic haute couture houses including Dior, Chanel, Valentino, Versace, and Dolce & Gabbana.</font></p>
+                <div class="house-grid">
+                    <a class="house-card reveal" href="products.html#product-chanel-coco-mademoiselle">
+                        <span class="house-media">
+                            <img src="images/chanel-studio.jpg" alt="Chanel Coco Mademoiselle Intense bottle" loading="lazy">
+                        </span>
+                        <h3>Chanel</h3>
+                        <p>Coco Mademoiselle Intense — a bold, ambery interpretation of the original.</p>
+                        <span class="card-link">Discover Chanel →</span>
+                    </a>
 
-                <br />
+                    <a class="house-card reveal" href="products.html#product-dior-jadore">
+                        <span class="house-media">
+                            <img src="images/dior.jpg" alt="Dior J'adore eau de parfum bottle and carton" loading="lazy">
+                        </span>
+                        <h3>Dior</h3>
+                        <p>J'adore — a luminous bouquet of ylang-ylang, jasmine and rose.</p>
+                        <span class="card-link">Discover Dior →</span>
+                    </a>
 
-                <p><a href="products.html"><font face="Times New Roman" size="4"><b>DISCOVER THE COLLECTIONS &rarr;</b></font></a></p>
+                    <a class="house-card reveal" href="products.html#product-valentino-uomo-intense">
+                        <span class="house-media">
+                            <img src="images/valentino.webp" alt="Valentino Born In Roma Uomo Intense bottle" loading="lazy">
+                        </span>
+                        <h3>Valentino</h3>
+                        <p>Born In Roma Uomo Intense — couture attitude, wrapped in vanilla and woods.</p>
+                        <span class="card-link">Discover Valentino →</span>
+                    </a>
 
-                <br />
-            </td>
-        </tr>
-    </table>
+                    <a class="house-card reveal" href="products.html#product-versace-bright-crystal">
+                        <span class="house-media">
+                            <img src="images/versace.webp" alt="Versace Bright Crystal eau de toilette bottle" loading="lazy">
+                        </span>
+                        <h3>Versace</h3>
+                        <p>Bright Crystal — pomegranate and peony, cut with cool magnolia.</p>
+                        <span class="card-link">Discover Versace →</span>
+                    </a>
 
-    <br /><br />
+                    <a class="house-card reveal" href="products.html#product-dg-pour-femme-intense">
+                        <span class="house-media">
+                            <img src="images/dolcegabbana.png" alt="Dolce and Gabbana Pour Femme Intense bottle" loading="lazy">
+                        </span>
+                        <h3>Dolce &amp; Gabbana</h3>
+                        <p>Pour Femme Intense — neroli, raspberry and a soft trail of vanilla.</p>
+                        <span class="card-link">Discover Dolce &amp; Gabbana →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!-- BRAND SHOWCASE GRID -->
-    <table width="85%" align="center" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td colspan="3">
-                <h3><font face="Times New Roman" size="5">FEATURED HOUSES</font></h3>
+        <!-- FEATURE / PHILOSOPHY -->
+        <section class="section section-alt" aria-labelledby="craft-title">
+            <div class="container feature">
+                <div class="feature-media reveal">
+                    <img src="images/dior1.jpg" alt="Dior Fahrenheit Parfum bottle with shadow play" loading="lazy">
+                </div>
+                <div class="feature-body reveal">
+                    <span class="eyebrow">The house standard</span>
+                    <h2 class="section-title" id="craft-title">Composition, not <em>compromise</em></h2>
+                    <p>
+                        We buy through authorised channels only. Every fragrance is
+                        checked for batch integrity, seal and provenance before it
+                        reaches a boutique shelf or your door.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Authenticated stock</strong>
+                            Sealed, batch-verified bottles sourced through approved distributors.
+                        </li>
+                        <li>
+                            <strong>Guided selection</strong>
+                            One-to-one scent profiling across the fragrance families.
+                        </li>
+                        <li>
+                            <strong>Considered presentation</strong>
+                            Signature wrapping, discreet delivery and hand-written notes.
+                        </li>
+                    </ul>
+                    <a class="link-underline" href="about.html">Read our story</a>
+                </div>
+            </div>
+        </section>
 
-                <hr width="25%" size="1" color="black" />
+        <!-- SIGNATURE SELECTION -->
+        <section class="section" aria-labelledby="signature-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title" id="signature-title">Signature <em>selections</em></h2>
+                    <p class="section-sub">
+                        Three compositions our clients return for, season after season.
+                    </p>
+                </div>
 
-                <br />
-            </td>
-        </tr>
+                <div class="product-grid">
+                    <article class="product-card reveal">
+                        <div class="product-media">
+                            <span class="product-tag">Timeless icon</span>
+                            <img src="images/coco-studio.jpg" alt="Chanel Coco eau de parfum bottle" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <p class="product-brand">Chanel</p>
+                            <h3 class="product-name">Coco Eau de Parfum</h3>
+                            <p class="product-notes">Coriander, rose, jasmine, sandalwood, amber and vanilla.</p>
+                            <div class="product-meta">
+                                <span class="product-size">100 ml</span>
+                                <span class="product-price">R2 999.55</span>
+                            </div>
+                            <a class="btn btn-ghost btn-block" href="products.html#product-chanel-coco-edp">View in collection</a>
+                        </div>
+                    </article>
 
-        <tr align="center" valign="top">
-            <td width="33%">
-                <table width="95%" cellpadding="12" border="1">
-                    <tr align="center">
-                        <td>
-                            <h4><font face="Times New Roman" size="4">CHANEL</font></h4>
+                    <article class="product-card reveal">
+                        <div class="product-media">
+                            <span class="product-tag">Golden signature</span>
+                            <img src="images/dior.jpg" alt="Dior J'adore eau de parfum bottle" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <p class="product-brand">Dior</p>
+                            <h3 class="product-name">J'adore Eau de Parfum</h3>
+                            <p class="product-notes">Ylang-ylang, jasmine sambac, rose and warm musk.</p>
+                            <div class="product-meta">
+                                <span class="product-size">100 ml</span>
+                                <span class="product-price">R3 721.19</span>
+                            </div>
+                            <a class="btn btn-ghost btn-block" href="products.html#product-dior-jadore">View in collection</a>
+                        </div>
+                    </article>
 
-                            <p><font face="Times New Roman" size="2"><i>N°5 Eau de Parfum</i></font></p>
+                    <article class="product-card reveal">
+                        <div class="product-media">
+                            <span class="product-tag">Modern classic</span>
+                            <img src="images/versage1.webp" alt="Versace Crystal Noir eau de parfum bottle" loading="lazy">
+                        </div>
+                        <div class="product-body">
+                            <p class="product-brand">Versace</p>
+                            <h3 class="product-name">Crystal Noir</h3>
+                            <p class="product-notes">Blackcurrant, gardenia, amber and creamy sandalwood.</p>
+                            <div class="product-meta">
+                                <span class="product-size">90 ml</span>
+                                <span class="product-price">R2 265.56</span>
+                            </div>
+                            <a class="btn btn-ghost btn-block" href="products.html#product-versace-crystal-noir">View in collection</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                            <p><font face="Times New Roman" size="2">An legendary floral bouquet housed in an iconic minimalist bottle.</font></p>
+        <!-- SERVICES -->
+        <section class="section section-alt" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title" id="services-title">The <em>experience</em></h2>
+                    <p class="section-sub">Thoughtful details that make a fragrance personal.</p>
+                </div>
 
-                            <p><a href="products.html">Explore Chanel</a></p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
+                <div class="service-grid">
+                    <article class="service-card reveal">
+                        <span class="service-num">I</span>
+                        <h3>Private scent consultation</h3>
+                        <p>An unhurried session through the fragrance families to find what suits your skin, season and presence.</p>
+                    </article>
 
-            <td width="33%">
-                <table width="95%" cellpadding="12" border="1">
-                    <tr align="center">
-                        <td>
-                            <h4><font face="Times New Roman" size="4">DIOR</font></h4>
+                    <article class="service-card reveal">
+                        <span class="service-num">II</span>
+                        <h3>Bottle engraving</h3>
+                        <p>Initials or a meaningful date, hand-engraved on selected bottles for a keepsake finish.</p>
+                    </article>
 
-                            <p><font face="Times New Roman" size="2"><i>Sauvage & J'adore</i></font></p>
+                    <article class="service-card reveal">
+                        <span class="service-num">III</span>
+                        <h3>Gifting &amp; corporate</h3>
+                        <p>Curated gift sets with signature wrapping, prepared for celebrations and client gifting.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                            <p><font face="Times New Roman" size="2">Powerful freshness paired with rare, hand-picked floral essences.</font></p>
+        <!-- QUOTE -->
+        <section class="quote-panel">
+            <blockquote>
+                “Perfume is the unseen, unforgettable, ultimate accessory of fashion.”
+            </blockquote>
+            <cite>Coco Chanel</cite>
+        </section>
 
-                            <p><a href="products.html">Explore Dior</a></p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
+        <!-- VIP BAND -->
+        <section class="vip-band">
+            <div class="container vip-inner">
+                <div>
+                    <h2>Join the private list</h2>
+                    <p>Early access to new arrivals, limited editions and boutique events.</p>
+                </div>
+                <a class="btn" href="signup.html">Create your account</a>
+            </div>
+        </section>
 
-            <td width="33%">
-                <table width="95%" cellpadding="12" border="1">
-                    <tr align="center">
-                        <td>
-                            <h4><font face="Times New Roman" size="4">VALENTINO</font></h4>
-
-                            <p><font face="Times New Roman" size="2"><i>Born In Roma</i></font></p>
-
-                            <p><font face="Times New Roman" size="2">A harmony of couture sophistication and high-fashion edge.</font></p>
-
-                            <p><a href="products.html">Explore Valentino</a></p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-
-    <br /><br /><hr width="85%" size="1" color="black" />
+    </main>
 
     <!-- FOOTER -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td>
-                <p><font face="Times New Roman" size="2">&copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.</font></p>
-            </td>
-        </tr>
-    </table>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="images/logo.jpg" alt="">
+                        <span class="brand-text">
+                            <span class="brand-name">The Luxury Perfumes</span>
+                            <span class="brand-tag">Haute Parfumerie</span>
+                        </span>
+                    </a>
+                    <p>
+                        A South African house of curated fine fragrance, devoted to
+                        composition, provenance and the pleasure of a signature scent.
+                    </p>
+                </div>
 
-    <!-- JAVASCRIPT -->
-    <script src="js_assets/forms.js"></script>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="products.html">The collection</a></li>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Client care</h4>
+                    <ul>
+                        <li><a href="contacts.html">Boutiques</a></li>
+                        <li><a href="tel:+27118830199">+27 11 883 0199</a></li>
+                        <li><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></li>
+                        <li><a href="login.html">Client login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> The Luxury Perfumes. All rights reserved.</span>
+                <span>Johannesburg · Cape Town · Pretoria</span>
+            </div>
+        </div>
+    </footer>
+
     <script src="js_assets/main.js"></script>
-
 </body>
 </html>

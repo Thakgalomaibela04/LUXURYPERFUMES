@@ -1,169 +1,282 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contacts | The Luxury Perfumes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutiques &amp; Contact | The Luxury Perfumes</title>
+    <meta name="description" content="Visit The Luxury Perfumes boutiques in Johannesburg, Cape Town and Pretoria, or reach our concierge by phone and email.">
+    <meta name="theme-color" content="#0a0a0b">
 
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body bgcolor="white" text="black">
+<body>
 
-    <!-- GLOBAL HEADER & NAVIGATION -->
-    <table width="100%" cellpadding="10" cellspacing="0" border="0">
-        <tr align="center">
-            <td>
-                <h1><font face="Times New Roman" size="7"><b>T H E  L U X U R Y  P E R F U M E S</b></font></h1>
-                <IMG SRC="images/logo.jpg">
-                <hr width="85%" size="1" color="black" />
-                <p>
-                    <font face="Times New Roman" size="3">
-                        <a href="index.html">HOME</a> &nbsp;|&nbsp;
-                        <a href="products.html">PRODUCTS & SERVICES</a> &nbsp;|&nbsp;
-                        <a href="about.html">ABOUT US</a> &nbsp;|&nbsp;
-                        <a href="enquiries.html">ENQUIRIES</a> &nbsp;|&nbsp;
-                        <a href="contacts.html"><b>CONTACTS</b></a> &nbsp;|&nbsp;
-                        <a href="signup.html">SIGN UP</a> &nbsp;|&nbsp;
-                        <a href="login.html">LOGIN</a> &nbsp;|&nbsp;
-                        <a href="sitemap.html">SITEMAP</a>
-                    </font>
-                </p>
-                <hr width="85%" size="1" color="black" />
-            </td>
-        </tr>
-    </table>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <br />
+    <div class="announce">
+        Complimentary delivery on orders over R1&nbsp;500 · Johannesburg · Cape Town · Pretoria
+    </div>
 
-    <!-- CONTACT DETAILS & LOCATIONS -->
-    <table width="85%" align="center" cellpadding="10" border="0">
-        <tr align="center">
-            <td colspan="2">
-                <h2><font face="Times New Roman" size="6">FLAGSHIP PERFUMES</font></h2>
-                <p><font face="Times New Roman" size="3">Visit our flagship stores for an exclusive in-person experience.</font></p>
-                <br />
-            </td>
-        </tr>
-        <tr valign="top">
-            <!-- LOCATION 1: JOHANNESBURG -->
-            <td width="50%">
-                <table width="95%" align="center" cellpadding="12" border="1">
-                    <tr>
-                        <td>
-                            <h3><font face="Times New Roman">JOHANNESBURG </font></h3>
-                            <p><b>Address:</b> Nelson Mandela Square, Sandton City, Johannesburg, 2196, South Africa</p>
-                            <p><b>Phone:</b> +27 11 883 0000</p>
-                            <p><b>Email:</b> joburg@theluxuryperfumes.com</p>
-                            <p><b>Opening Hours:</b> Mon – Sat: 09:00 – 19:00</p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <!-- LOCATION 2: CAPE TOWN -->
-            <td width="50%">
-                <table width="95%" align="center" cellpadding="12" border="1">
-                    <tr>
-                        <td>
-                            <h3><font face="Times New Roman">CAPE TOWN </font></h3>
-                            <p><b>Address:</b> V&A Waterfront, Breakwater Blvd, Cape Town, 8001, South Africa</p>
-                            <p><b>Phone:</b> +27 21 408 7600</p>
-                            <p><b>Email:</b> capetown@theluxuryperfumes.com</p>
-                            <p><b>Opening Hours:</b> Mon – Sat: 09:00 – 21:00</p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-
-    <br /><br />
-
-    <!-- ADDED: GOOGLE MAP FOR THE LUXURY PERFUMES -->
-    <section style="width:85%; margin:30px auto; font-family:'Times New Roman',serif;">
-
-        <div style="text-align:center; margin-bottom:20px;">
-            <h2 style="font-size:32px;">FIND OUR LOCATION</h2>
-            <p>Visit The Luxury Perfumes at our Pretoria location.</p>
-            <p>
-                <b>Address:</b>
-                108 Celliers Street, Sunnyside, Pretoria, South Africa
-            </p>
-
-            <a
-                href="https://www.google.com/maps/dir/?api=1&destination=108+Celliers+Street%2C+Sunnyside%2C+Pretoria%2C+South+Africa"
-                target="_blank"
-                rel="noopener noreferrer"
-                style="display:inline-block; background-color:#c7a66a; color:#100d0d; padding:12px 24px; text-decoration:none; font-weight:bold; border:1px solid #8f7146;">
-                GET DIRECTIONS ON GOOGLE MAPS
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Luxury Perfumes — home">
+                <img class="brand-mark" src="images/logo.jpg" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">The Luxury Perfumes</span>
+                    <span class="brand-tag">Haute Parfumerie</span>
+                </span>
             </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+            </button>
+
+            <nav class="nav" id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="products.html">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contacts.html" aria-current="page">Boutiques</a>
+                <a href="enquiries.html">Enquiries</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a class="cart-trigger" href="products.html#lp-cart" data-cart-open>
+                    Bag <span id="lp-cart-count" aria-live="polite">0</span>
+                </a>
+            </nav>
         </div>
+    </header>
 
-        <div style="border:2px solid #c7a66a; padding:5px; background-color:#100d0d;">
-            <iframe
-                title="Google Map - The Luxury Perfumes, Sunnyside Pretoria"
-                src="https://maps.google.com/maps?q=108%20Celliers%20Street%2C%20Sunnyside%2C%20Pretoria%2C%20South%20Africa&z=16&output=embed"
-                width="100%"
-                height="400"
-                style="border:0; display:block;"
-                allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Visit us</span>
+                <h1>Our <em>boutiques</em></h1>
+                <p>
+                    Three addresses, one standard of service. Walk in for a
+                    consultation, or book a private appointment in advance.
+                </p>
+            </div>
+        </section>
+
+        <!-- BOUTIQUES -->
+        <section class="section-tight">
+            <div class="container">
+                <div class="boutique-grid">
+                    <article class="boutique-card reveal">
+                        <h3>Johannesburg</h3>
+                        <dl>
+                            <dt>Address</dt>
+                            <dd>Nelson Mandela Square, Sandton City, Johannesburg, 2196</dd>
+                            <dt>Telephone</dt>
+                            <dd><a href="tel:+27118830000">+27 11 883 0000</a></dd>
+                            <dt>Email</dt>
+                            <dd><a href="mailto:joburg@theluxuryperfumes.com">joburg@theluxuryperfumes.com</a></dd>
+                            <dt>Hours</dt>
+                            <dd>Monday – Saturday, 09:00 – 19:00</dd>
+                        </dl>
+                    </article>
+
+                    <article class="boutique-card reveal">
+                        <h3>Cape Town</h3>
+                        <dl>
+                            <dt>Address</dt>
+                            <dd>V&amp;A Waterfront, Breakwater Boulevard, Cape Town, 8001</dd>
+                            <dt>Telephone</dt>
+                            <dd><a href="tel:+27214087600">+27 21 408 7600</a></dd>
+                            <dt>Email</dt>
+                            <dd><a href="mailto:capetown@theluxuryperfumes.com">capetown@theluxuryperfumes.com</a></dd>
+                            <dt>Hours</dt>
+                            <dd>Monday – Saturday, 09:00 – 21:00</dd>
+                        </dl>
+                    </article>
+
+                    <article class="boutique-card reveal">
+                        <h3>Pretoria</h3>
+                        <dl>
+                            <dt>Address</dt>
+                            <dd>108 Celliers Street, Sunnyside, Pretoria, 0002</dd>
+                            <dt>Telephone</dt>
+                            <dd><a href="tel:+27118830144">+27 11 883 0144</a></dd>
+                            <dt>Email</dt>
+                            <dd><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></dd>
+                            <dt>Hours</dt>
+                            <dd>Monday – Friday, 09:00 – 18:00</dd>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title">Find the <em>Pretoria</em> boutique</h2>
+                    <p class="section-sub">108 Celliers Street, Sunnyside — street parking available.</p>
+                </div>
+
+                <div class="map-actions reveal">
+                    <a class="btn btn-ghost"
+                       href="https://www.google.com/maps/dir/?api=1&amp;destination=108+Celliers+Street%2C+Sunnyside%2C+Pretoria%2C+South+Africa"
+                       target="_blank" rel="noopener noreferrer">
+                        Get directions
+                    </a>
+                </div>
+
+                <div class="map-frame reveal">
+                    <iframe
+                        title="Map showing The Luxury Perfumes, 108 Celliers Street, Sunnyside, Pretoria"
+                        src="https://maps.google.com/maps?q=108%20Celliers%20Street%2C%20Sunnyside%2C%20Pretoria%2C%20South%20Africa&amp;z=16&amp;output=embed"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIRECT CONTACTS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="rule-mark">✦</div>
+                    <h2 class="section-title">Talk to the <em>concierge</em></h2>
+                </div>
+
+                <div class="note-grid">
+                    <article class="note-card reveal">
+                        <span class="num">Telephone</span>
+                        <h3>Call us</h3>
+                        <ul class="info-list">
+                            <li>
+                                <h3>VIP concierge</h3>
+                                <a href="tel:+27118830199">+27 11 883 0199</a>
+                            </li>
+                            <li>
+                                <h3>Order enquiries</h3>
+                                <a href="tel:+27118830144">+27 11 883 0144</a>
+                            </li>
+                            <li>
+                                <h3>Bespoke consultations</h3>
+                                <a href="tel:+27214087600">+27 21 408 7600</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="note-card reveal">
+                        <span class="num">Email</span>
+                        <h3>Write to us</h3>
+                        <ul class="info-list">
+                            <li>
+                                <h3>General concierge</h3>
+                                <a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a>
+                            </li>
+                            <li>
+                                <h3>Client support</h3>
+                                <a href="mailto:support@theluxuryperfumes.com">support@theluxuryperfumes.com</a>
+                            </li>
+                            <li>
+                                <h3>Private orders</h3>
+                                <a href="mailto:vip@theluxuryperfumes.com">vip@theluxuryperfumes.com</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="note-card reveal">
+                        <span class="num">Social</span>
+                        <h3>Follow the house</h3>
+                        <ul class="info-list">
+                            <li>
+                                <h3>Instagram</h3>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@TheLuxuryPerfumes</a>
+                            </li>
+                            <li>
+                                <h3>Facebook</h3>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">The Luxury Perfumes Official</a>
+                            </li>
+                            <li>
+                                <h3>Pinterest</h3>
+                                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">The Luxury Perfumes Maison</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="vip-band">
+            <div class="container vip-inner">
+                <div>
+                    <h2>Prefer a private appointment?</h2>
+                    <p>Tell us your availability and we will reserve the salon.</p>
+                </div>
+                <a class="btn" href="enquiries.html">Book a consultation</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img class="brand-mark" src="images/logo.jpg" alt="">
+                        <span class="brand-text">
+                            <span class="brand-name">The Luxury Perfumes</span>
+                            <span class="brand-tag">Haute Parfumerie</span>
+                        </span>
+                    </a>
+                    <p>
+                        A South African house of curated fine fragrance, devoted to
+                        composition, provenance and the pleasure of a signature scent.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="products.html">The collection</a></li>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Client care</h4>
+                    <ul>
+                        <li><a href="contacts.html">Boutiques</a></li>
+                        <li><a href="tel:+27118830199">+27 11 883 0199</a></li>
+                        <li><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></li>
+                        <li><a href="login.html">Client login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> The Luxury Perfumes. All rights reserved.</span>
+                <span>Johannesburg · Cape Town · Pretoria</span>
+            </div>
         </div>
+    </footer>
 
-    </section>
-    <!-- END OF ADDED GOOGLE MAP -->
-
-    <br /><br />
-
-    <!-- DIRECT CONTACTS & SOCIAL MEDIA -->
-    <table width="85%" align="center" cellpadding="15" cellspacing="0" border="1">
-        <tr align="center">
-            <td colspan="3" bgcolor="black">
-                <font face="Times New Roman" color="white" size="4"><b>DIRECT COMMUNICATIONS & SOCIALS</b></font>
-            </td>
-        </tr>
-        <tr valign="top">
-            <!-- DIRECT CALLS -->
-            <td width="33%">
-                <h4 align="center"><font face="Times New Roman">TELEPHONE DIRECTORY</font></h4>
-                <hr width="50%" size="1" color="black" />
-                <p><b>SA VIP Concierge:</b><br /><a href="tel:+27118830199">+27 (11) 883-0199</a></p>
-                <p><b>Order Enquiries:</b><br /><a href="tel:+27118830144">+27 (11) 883-0144</a></p>
-                <p><b>Bespoke Consultations:</b><br /><a href="tel:+27214087600">+27 (21) 408-7600</a></p>
-            </td>
-            <!-- DIRECT EMAILS -->
-            <td width="33%">
-                <h4 align="center"><font face="Times New Roman">EMAIL DEPARTMENTS</font></h4>
-                <hr width="50%" size="1" color="black" />
-                <p><b>General Concierge:</b><br /><a href="mailto:concierge@theluxuryperfumes.com">concierge@theluxuryperfumes.com</a></p>
-                <p><b>Client Support:</b><br /><a href="mailto:support@theluxuryperfumes.com">support@theluxuryperfumes.com</a></p>
-                <p><b>Private Orders:</b><br /><a href="mailto:vip@theluxuryperfumes.com">vip@theluxuryperfumes.com</a></p>
-            </td>
-            <!-- SOCIAL MEDIA -->
-            <td width="33%">
-                <h4 align="center"><font face="Times New Roman">SOCIAL MEDIA</font></h4>
-                <hr width="50%" size="1" color="black" />
-                <p>Follow our official channels for private reveals & couture events:</p>
-                <ul type="square">
-                    <li><b>Instagram:</b> <a href="https://instagram.com" target="_blank">@TheLuxuryPerfumes</a></li>
-                    <li><b>Facebook:</b> <a href="https://facebook.com" target="_blank">The Luxury Perfumes Official</a></li>
-                    <li><b>X (Twitter):</b> <a href="https://x.com" target="_blank">@LuxuryPerfumes</a></li>
-                    <li><b>Pinterest:</b> <a href="https://pinterest.com" target="_blank">The Luxury Perfumes Maison</a></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-
-    <br /><br /><hr width="85%" size="1" color="black" />
-
-    <table width="100%" cellpadding="10" border="0">
-        <tr align="center">
-            <td><p><font face="Times New Roman" size="2">&copy; 2026 THE LUXURY PERFUMES. ALL RIGHTS RESERVED.</font></p></td>
-        </tr>
-    </table>
-
-    <!-- JAVASCRIPT LINKS -->
-   <script src="js_assets/forms.js"></script>
-<script src="js_assets/main.js"></script>
+    <script src="js_assets/main.js"></script>
 </body>
 </html>

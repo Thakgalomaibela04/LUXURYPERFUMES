@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function money(amount) {
-        return new Intl.NumberFormat("en-ZA", {
-            style: "currency",
-            currency: "ZAR"
-        }).format(amount);
+        const value = Number(amount) || 0;
+        const parts = value.toFixed(2).split(".");
+        const whole = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, "\u00A0");
+        return "R" + whole + "." + parts[1];
     }
 
     function saveCart() {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             count += item.quantity;
 
             const row = document.createElement("div");
-            row.className = "lp-cart-item";
+            row.className = "cart-item";
 
             const details = document.createElement("div");
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             details.append(heading, price, line);
 
             const controls = document.createElement("div");
-            controls.className = "lp-cart-controls";
+            controls.className = "cart-controls";
 
             const decrease = document.createElement("button");
             decrease.type = "button";
@@ -180,6 +180,11 @@ document.addEventListener("DOMContentLoaded", function () {
             saveCart();
             renderCart();
             showMessage(name + " added to your bag.");
+
+            // Let the site open the shopping bag drawer for feedback.
+            document.dispatchEvent(new CustomEvent("cart:add", {
+                detail: { name: name }
+            }));
         });
     });
 
@@ -187,12 +192,10 @@ document.addEventListener("DOMContentLoaded", function () {
         clearButton.addEventListener("click", function () {
             if (cart.length === 0) return;
 
-            if (confirm("Are you sure you want to clear your shopping bag?")) {
-                cart = [];
-                saveCart();
-                renderCart();
-                showMessage("Your shopping bag has been cleared.");
-            }
+            cart = [];
+            saveCart();
+            renderCart();
+            showMessage("Your shopping bag has been cleared.");
         });
     }
 
